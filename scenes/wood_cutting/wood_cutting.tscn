@@ -1,10 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://xamhw2hvc7ru"]
 
-[ext_resource type="PackedScene" uid="uid://cfgr1nu1fgn5y" path="res://scenes/wood_cutting/logs.tscn" id="1_iubfx"]
+[ext_resource type="Script" path="res://scenes/wood_cutting/wood_cutting.gd" id="1_isn6w"]
 
 [node name="WoodCutting" type="Node2D"]
-
-[node name="wood" parent="." instance=ExtResource("1_iubfx")]
-position = Vector2(101, -227)
+script = ExtResource("1_isn6w")
 
 [node name="Camera2D" type="Camera2D" parent="."]
