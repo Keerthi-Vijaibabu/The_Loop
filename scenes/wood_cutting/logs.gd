@@ -5,3 +5,9 @@ const GRAVITY = 98.0
 func _physics_process(delta):
 	velocity.y += GRAVITY * delta
 	move_and_slide()
+
+func _input_event(viewport, event, shape_idx): # Destroys the object when clicked
+	if event is InputEventMouseButton and event.pressed:
+		var ScoreManager =get_tree().get_root().get_node("WoodCutting/ScoreManager")
+		ScoreManager.add_point()
+		queue_free()  
