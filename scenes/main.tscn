@@ -5,5 +5,15 @@
 [node name="Main" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_khonj")]
-position = Vector2(87, 87)
+position = Vector2(1420, 530)
 motion_mode = 1
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Node" type="Node" parent="Node"]
+
+[node name="Node" type="Node" parent="Node/Node"]
+
+[node name="Node2" type="Node" parent="."]
+
+[node name="Node3" type="Node" parent="."]

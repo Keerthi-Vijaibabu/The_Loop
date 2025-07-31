@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfgr1nu1fgn5y"]
 
 [ext_resource type="Texture2D" uid="uid://ddpqns743ngn8" path="res://icon.svg" id="1_biuor"]
-[ext_resource type="Script" path="res://scenes/wood_cutting/logs.gd" id="1_ukp3n"]
+[ext_resource type="Script" uid="uid://n3mc1a6pbgn7" path="res://scenes/wood_cutting/logs.gd" id="1_ukp3n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yrfq2"]
 size = Vector2(125, 125)
