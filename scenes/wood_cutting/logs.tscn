@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfgr1nu1fgn5y"]
+
+[ext_resource type="Texture2D" uid="uid://ddpqns743ngn8" path="res://icon.svg" id="1_biuor"]
+[ext_resource type="Script" path="res://scenes/wood_cutting/logs.gd" id="1_ukp3n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrfq2"]
+size = Vector2(125, 125)
+
+[node name="wood" type="CharacterBody2D"]
+script = ExtResource("1_ukp3n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_biuor")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_yrfq2")
