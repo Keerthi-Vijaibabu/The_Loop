@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-[gd_scene load_steps=83 format=3 uid="uid://ih1lsf14wcyo"]
-=======
 [gd_scene load_steps=30 format=3 uid="uid://ih1lsf14wcyo"]
 
 [ext_resource type="Texture2D" uid="uid://6bw334hcelrx" path="res://assets/level2/g1.jpg" id="1_1mhn8"]
@@ -29,249 +26,12 @@
 [ext_resource type="Texture2D" uid="uid://bdopuhjmeqplp" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Broken_tree3.png" id="26_vfcr6"]
 [ext_resource type="Texture2D" uid="uid://dhh0pwowi2gex" path="res://assets/level2/Well (1).png" id="27_jfsao"]
 [ext_resource type="Texture2D" uid="uid://bk006oqaw1fwf" path="res://assets/level1/TilesetRiver.JPG" id="28_sfdux"]
->>>>>>> f0d6b3d80a1b71e24d5531a470b420c02aa1bc32
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8jpxv"]
 size = Vector2(1150, 647.5)
 
-[sub_resource type="Resource" id="Resource_wi4o3"]
-metadata/__load_path__ = "res://g1.jpg"
-
-[sub_resource type="Resource" id="Resource_vhmy2"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_qu8xk"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_7pwm0"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_xdoxa"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_xlafv"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_kejo5"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_7tr0j"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_bbnhl"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_f17eg"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_kxs5y"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_f31b2"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_lhxgd"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_r8a5h"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_pmkxm"]
-metadata/__load_path__ = "res://store (1).png"
-
-[sub_resource type="Resource" id="Resource_ueikh"]
-metadata/__load_path__ = "res://cow.png"
-
-[sub_resource type="Resource" id="Resource_1fhlo"]
-metadata/__load_path__ = "res://cow.png"
-
-[sub_resource type="Resource" id="Resource_how18"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_7oi8n"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_gs8qe"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_pr66g"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_2jfmm"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_7obif"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_1reov"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_1dis4"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_c77lx"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_b77ej"]
-metadata/__load_path__ = "res://chicken-ezgif.com-crop.png"
-
-[sub_resource type="Resource" id="Resource_ljnj7"]
-metadata/__load_path__ = "res://chicken-ezgif.com-crop.png"
-
-[sub_resource type="Resource" id="Resource_0wgk2"]
-metadata/__load_path__ = "res://chicken-ezgif.com-crop.png"
-
-[sub_resource type="Resource" id="Resource_sws6j"]
-metadata/__load_path__ = "res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/2 Objects/7 House/1.png"
-
-[sub_resource type="Resource" id="Resource_jhcjm"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_28w4p"]
-metadata/__load_path__ = "res://goat.png"
-
-[sub_resource type="Resource" id="Resource_63uc6"]
-metadata/__load_path__ = "res://goat.png"
-
-[sub_resource type="Resource" id="Resource_bfdpt"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Tree2.png"
-
-[sub_resource type="Resource" id="Resource_alev3"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Tree2.png"
-
-[sub_resource type="Resource" id="Resource_h28et"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Tree2.png"
-
-[sub_resource type="Resource" id="Resource_0q1ms"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Tree2.png"
-
-[sub_resource type="Resource" id="Resource_a61eo"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Tree2.png"
-
-[sub_resource type="Resource" id="Resource_1fmkg"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Tree2.png"
-
-[sub_resource type="Resource" id="Resource_hr0ru"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Palm_tree2_2.png"
-
-[sub_resource type="Resource" id="Resource_5nylq"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Palm_tree2_2.png"
-
-[sub_resource type="Resource" id="Resource_f1xer"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Palm_tree2_2.png"
-
-[sub_resource type="Resource" id="Resource_jq5ki"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Moss_tree3.png"
-
-[sub_resource type="Resource" id="Resource_fj6a3"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Fruit_tree1.png"
-
-[sub_resource type="Resource" id="Resource_l3yun"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Fruit_tree1.png"
-
-[sub_resource type="Resource" id="Resource_edlum"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Fruit_tree1.png"
-
-[sub_resource type="Resource" id="Resource_5nami"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Flower_tree2.png"
-
-[sub_resource type="Resource" id="Resource_wsu0u"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Fruit_tree3.png"
-
-[sub_resource type="Resource" id="Resource_do3bs"]
-metadata/__load_path__ = "res://lpc-farm/lpc-farm/barn.png"
-
-[sub_resource type="Resource" id="Resource_bxqhl"]
-metadata/__load_path__ = "res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/3 Animated Objects/DoubleDoor1.png"
-
-[sub_resource type="Resource" id="Resource_5fx7c"]
-metadata/__load_path__ = "res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/3 Animated Objects/DoubleDoor1.png"
-
-[sub_resource type="Resource" id="Resource_b43gc"]
-metadata/__load_path__ = "res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/3 Animated Objects/DoubleDoor1.png"
-
-[sub_resource type="Resource" id="Resource_vllj2"]
-metadata/__load_path__ = "res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/3 Animated Objects/DoubleDoor1.png"
-
-[sub_resource type="Resource" id="Resource_7w2lf"]
-metadata/__load_path__ = "res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/3 Animated Objects/DoubleDoor1.png"
-
-[sub_resource type="Resource" id="Resource_1u4td"]
-metadata/__load_path__ = "res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/3 Animated Objects/DoubleDoor1.png"
-
-[sub_resource type="Resource" id="Resource_rab8g"]
-metadata/__load_path__ = "res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/2 Objects/4 Box/1.png"
-
-[sub_resource type="Resource" id="Resource_5vs2n"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Moss_tree2.png"
-
-[sub_resource type="Resource" id="Resource_emyou"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Moss_tree2.png"
-
-[sub_resource type="Resource" id="Resource_hbyva"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Moss_tree2.png"
-
-[sub_resource type="Resource" id="Resource_1g6ci"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Moss_tree2.png"
-
-[sub_resource type="Resource" id="Resource_yixhb"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Moss_tree2.png"
-
-[sub_resource type="Resource" id="Resource_yspx0"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Moss_tree2.png"
-
-[sub_resource type="Resource" id="Resource_ievd3"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Palm_tree1_3.png"
-
-[sub_resource type="Resource" id="Resource_4hxnt"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Palm_tree1_3.png"
-
-[sub_resource type="Resource" id="Resource_qrpga"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Palm_tree1_3.png"
-
-[sub_resource type="Resource" id="Resource_84pwa"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Palm_tree1_3.png"
-
-[sub_resource type="Resource" id="Resource_km1a4"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Broken_tree1.png"
-
-[sub_resource type="Resource" id="Resource_70oh1"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/tree_2.png"
-
-[sub_resource type="Resource" id="Resource_53j5l"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/tree_2.png"
-
-[sub_resource type="Resource" id="Resource_vrudt"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/tree_2.png"
-
-[sub_resource type="Resource" id="Resource_tkw2t"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/tree_2.png"
-
-[sub_resource type="Resource" id="Resource_8gckq"]
-metadata/__load_path__ = "res://PNG/decor/stones_5.png"
-
-[sub_resource type="Resource" id="Resource_0wt3m"]
-metadata/__load_path__ = "res://PNG/decor/stones_5.png"
-
-[sub_resource type="Resource" id="Resource_m0w42"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Moss_tree1.png"
-
-[sub_resource type="Resource" id="Resource_uahxi"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Palm_tree1_3.png"
-
-[sub_resource type="Resource" id="Resource_gfs5g"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Palm_tree2_3.png"
-
-[sub_resource type="Resource" id="Resource_7jeet"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Palm_tree2_1.png"
-
-[sub_resource type="Resource" id="Resource_5ms3k"]
-metadata/__load_path__ = "res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Broken_tree3.png"
-
-[sub_resource type="Resource" id="Resource_tiw27"]
-metadata/__load_path__ = "res://Well (1).png"
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irhcr"]
+texture = ExtResource("28_sfdux")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -514,13 +274,8 @@ offset_left = 2.0
 offset_top = -1.0
 offset_right = 1152.0
 offset_bottom = 649.0
-texture = SubResource("Resource_wi4o3")
+texture = ExtResource("1_1mhn8")
 
-<<<<<<< HEAD
-[node name="Barn3" type="Sprite2D" parent="."]
-position = Vector2(844, 120)
-texture = SubResource("Resource_vhmy2")
-=======
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2"]
@@ -529,7 +284,6 @@ texture = SubResource("Resource_vhmy2")
 position = Vector2(817, 352)
 skew = 0.619592
 texture = ExtResource("2_3yxjw")
->>>>>>> f0d6b3d80a1b71e24d5531a470b420c02aa1bc32
 region_enabled = true
 region_rect = Rect2(191.541, 1166.06, 37.2553, 82.4133)
 
@@ -602,150 +356,67 @@ region_rect = Rect2(11.6539, 949.104, 44.3276, 114.951)
 [node name="Barn12" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(841, 196)
 scale = Vector2(0.5, 0.5)
-texture = SubResource("Resource_qu8xk")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(613.101, 270, 91.3001, 51.7)
 
-<<<<<<< HEAD
-[node name="Barn9" type="Sprite2D" parent="."]
-position = Vector2(93, 81)
-rotation = -6.28319
-texture = SubResource("Resource_7pwm0")
-region_enabled = true
-region_rect = Rect2(573.861, 321.08, 129.242, 170.177)
-
-[node name="Barn19" type="Sprite2D" parent="."]
-position = Vector2(226, 81)
-rotation = -6.28319
-texture = SubResource("Resource_xdoxa")
-region_enabled = true
-region_rect = Rect2(573.861, 321.08, 129.242, 170.177)
-
-[node name="Barn11" type="Sprite2D" parent="."]
-position = Vector2(697, 505)
-rotation = -6.28319
-texture = SubResource("Resource_xlafv")
-region_enabled = true
-region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
-
-[node name="Barn14" type="Sprite2D" parent="."]
-position = Vector2(761, 503)
-rotation = -6.28319
-texture = SubResource("Resource_kejo5")
-region_enabled = true
-region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
-
-[node name="Barn12" type="Sprite2D" parent="."]
-position = Vector2(663, 506)
-rotation = -6.28319
-texture = SubResource("Resource_7tr0j")
-region_enabled = true
-region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
-
-[node name="Barn15" type="Sprite2D" parent="."]
-position = Vector2(634, 507)
-rotation = -6.28319
-texture = SubResource("Resource_bbnhl")
-region_enabled = true
-region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
-
-[node name="Barn16" type="Sprite2D" parent="."]
-position = Vector2(634, 507)
-rotation = -6.28319
-texture = SubResource("Resource_f17eg")
-region_enabled = true
-region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
-
-[node name="Barn13" type="Sprite2D" parent="."]
-position = Vector2(730, 504)
-rotation = -6.28319
-texture = SubResource("Resource_kxs5y")
-region_enabled = true
-region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
-
-[node name="Barn10" type="Sprite2D" parent="."]
-position = Vector2(167, 173)
-rotation = -6.28319
-texture = SubResource("Resource_f31b2")
-region_enabled = true
-region_rect = Rect2(250.568, 1061.15, 133.798, 97.671)
-
-[node name="Barn17" type="Sprite2D" parent="."]
-position = Vector2(615, 549)
-rotation = -6.28319
-texture = SubResource("Resource_lhxgd")
-region_enabled = true
-region_rect = Rect2(11.6539, 949.104, 44.3276, 114.951)
-
-[node name="Barn18" type="Sprite2D" parent="."]
-position = Vector2(770, 545)
-rotation = -6.28319
-texture = SubResource("Resource_r8a5h")
-region_enabled = true
-region_rect = Rect2(11.6539, 949.104, 44.3276, 114.951)
-
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2"]
-=======
 [node name="Barn3" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(844, 120)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(195.563, 280.874, 191.965, 236.031)
->>>>>>> f0d6b3d80a1b71e24d5531a470b420c02aa1bc32
 
 [node name="Store(1)" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(127, 563)
 scale = Vector2(0.25, 0.25)
-texture = SubResource("Resource_pmkxm")
+texture = ExtResource("7_l8hla")
 region_enabled = true
 region_rect = Rect2(25.4215, 18.3968, 467.769, 474.381)
 
 [node name="Cow2" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(784, 324)
 scale = Vector2(0.15, 0.15)
-texture = SubResource("Resource_ueikh")
+texture = ExtResource("6_w8cd7")
 region_enabled = true
 region_rect = Rect2(0, 33.2893, 512, 444.629)
 
 [node name="Cow" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(792, 266)
 scale = Vector2(0.15, 0.15)
-texture = SubResource("Resource_1fhlo")
+texture = ExtResource("6_w8cd7")
 region_enabled = true
 region_rect = Rect2(0, 33.2893, 512, 444.629)
 
 [node name="Barn9" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(887, 295)
-texture = SubResource("Resource_how18")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(129.846, 928.627, 124.685, 64.887)
 
 [node name="Barn4" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(851, 82)
-texture = SubResource("Resource_7oi8n")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(195.563, 522.891, 202.312, 184.156)
 
 [node name="Barn5" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(850, 153)
 scale = Vector2(0.35, 0.35)
-texture = SubResource("Resource_gs8qe")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(226.486, 1161.07, 63.955, 78.2361)
 
 [node name="Barn8" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(833, 149)
 scale = Vector2(0.35, 0.35)
-texture = SubResource("Resource_pr66g")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(226.486, 1161.07, 63.955, 78.2361)
 
 [node name="Barn10" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(863, 154)
 scale = Vector2(0.35, 0.35)
-texture = SubResource("Resource_2jfmm")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(226.486, 1161.07, 63.955, 78.2361)
 
@@ -753,147 +424,126 @@ region_rect = Rect2(226.486, 1161.07, 63.955, 78.2361)
 position = Vector2(1091, 281)
 rotation = 1.57603
 scale = Vector2(0.5, 0.5)
-texture = SubResource("Resource_7obif")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(380.698, 1020.38, 256.813, 139.462)
 
 [node name="Barn7" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(845, 144)
-texture = SubResource("Resource_1reov")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(533.8, 695.8, 93.5001, 34.1001)
 
 [node name="Barn11" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(980, 221)
-texture = SubResource("Resource_1dis4")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(188.211, 1248.52, 43.8517, 64.8446)
 
 [node name="Barn2" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(1046, 95)
-texture = SubResource("Resource_c77lx")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(511.232, 794.884, 127.267, 222.894)
 
 [node name="Chicken-ezgif_com-crop" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(1129, 184)
 scale = Vector2(2, 2)
-texture = SubResource("Resource_b77ej")
+texture = ExtResource("3_elgsa")
 
 [node name="Chicken-ezgif_com-crop2" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(962, 155)
 scale = Vector2(2, 2)
-texture = SubResource("Resource_ljnj7")
+texture = ExtResource("3_elgsa")
 
 [node name="Chicken-ezgif_com-crop3" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(961, 94)
 scale = Vector2(2, 2)
-texture = SubResource("Resource_0wgk2")
+texture = ExtResource("3_elgsa")
 
 [node name="1" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(1012, 542)
 scale = Vector2(1.9, 1.5)
-<<<<<<< HEAD
-texture = SubResource("Resource_sws6j")
-=======
 texture = ExtResource("16_dacrv")
->>>>>>> f0d6b3d80a1b71e24d5531a470b420c02aa1bc32
 
 [node name="Barn" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(256, 514)
-texture = SubResource("Resource_jhcjm")
+texture = ExtResource("2_3yxjw")
 region_enabled = true
 
 [node name="Goat" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(976, 293)
 scale = Vector2(0.1, 0.1)
-texture = SubResource("Resource_28w4p")
+texture = ExtResource("5_0rof8")
 
 [node name="Goat2" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
 position = Vector2(982, 261)
 rotation = -0.162316
 scale = Vector2(0.1, 0.1)
 skew = 0.0401426
-texture = SubResource("Resource_63uc6")
+texture = ExtResource("5_0rof8")
 
 [node name="Tree2" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(724, 39)
-texture = SubResource("Resource_bfdpt")
+texture = ExtResource("8_rol5h")
 
 [node name="Tree3" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(724, 354)
-texture = SubResource("Resource_alev3")
+texture = ExtResource("8_rol5h")
 
 [node name="Tree4" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(721, 104)
-texture = SubResource("Resource_h28et")
+texture = ExtResource("8_rol5h")
 
 [node name="Tree5" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(722, 249)
-texture = SubResource("Resource_0q1ms")
+texture = ExtResource("8_rol5h")
 
 [node name="Tree6" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(721, 175)
-texture = SubResource("Resource_a61eo")
+texture = ExtResource("8_rol5h")
 
 [node name="Tree7" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(1033, 216)
-texture = SubResource("Resource_1fmkg")
+texture = ExtResource("8_rol5h")
 
 [node name="PalmTree22" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(1020, 352)
-texture = SubResource("Resource_hr0ru")
+texture = ExtResource("9_vdxg2")
 
 [node name="PalmTree23" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(1123, 36)
-texture = SubResource("Resource_5nylq")
+texture = ExtResource("9_vdxg2")
 
 [node name="PalmTree24" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(1128, 355)
-texture = SubResource("Resource_f1xer")
+texture = ExtResource("9_vdxg2")
 
-<<<<<<< HEAD
-[node name="MossTree3" type="Sprite2D" parent="Sprite2D2"]
-position = Vector2(722, 302)
-texture = SubResource("Resource_jq5ki")
-
-=======
->>>>>>> f0d6b3d80a1b71e24d5531a470b420c02aa1bc32
 [node name="FruitTree1" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(872, 602)
-texture = SubResource("Resource_fj6a3")
+texture = ExtResource("11_sfdux")
 
 [node name="FruitTree2" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(323, 39)
-texture = SubResource("Resource_l3yun")
+texture = ExtResource("11_sfdux")
 
 [node name="FruitTree4" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(28, 170)
-texture = SubResource("Resource_edlum")
+texture = ExtResource("11_sfdux")
 
 [node name="FlowerTree2" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(959, 30)
-texture = SubResource("Resource_5nami")
+texture = ExtResource("12_8jpxv")
 
 [node name="FruitTree3" type="Sprite2D" parent="Sprite2D2"]
 position = Vector2(1140, 237)
-texture = SubResource("Resource_wsu0u")
+texture = ExtResource("13_irhcr")
 
-<<<<<<< HEAD
-[node name="Barn" type="Sprite2D" parent="Sprite2D2"]
-position = Vector2(817, 352)
-skew = 0.619592
-texture = SubResource("Resource_do3bs")
-region_enabled = true
-region_rect = Rect2(191.541, 1166.06, 37.2553, 82.4133)
-
-=======
->>>>>>> f0d6b3d80a1b71e24d5531a470b420c02aa1bc32
 [node name="DoubleDoor1" type="Sprite2D" parent="."]
 position = Vector2(686, 79)
 rotation = -4.72112
 skew = -0.757473
-texture = SubResource("Resource_bxqhl")
+texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
@@ -901,7 +551,7 @@ region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 position = Vector2(965, 398)
 rotation = -3.11018
 skew = 0.305433
-texture = SubResource("Resource_5fx7c")
+texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
@@ -909,7 +559,7 @@ region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 position = Vector2(1086, 399)
 rotation = -3.11018
 skew = 0.26529
-texture = SubResource("Resource_b43gc")
+texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
@@ -917,7 +567,7 @@ region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 position = Vector2(753, 400)
 rotation = -3.11018
 skew = 0.466003
-texture = SubResource("Resource_vllj2")
+texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
@@ -926,7 +576,7 @@ position = Vector2(685, 337)
 rotation = -4.72112
 scale = Vector2(1, 0.9)
 skew = -0.757473
-texture = SubResource("Resource_7w2lf")
+texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
@@ -934,122 +584,114 @@ region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 position = Vector2(685, 209)
 rotation = -4.72112
 skew = -0.757473
-texture = SubResource("Resource_1u4td")
+texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
-<<<<<<< HEAD
-[node name="1" type="Sprite2D" parent="."]
-position = Vector2(916, 237)
-scale = Vector2(2, 2)
-texture = SubResource("Resource_rab8g")
-
-=======
->>>>>>> f0d6b3d80a1b71e24d5531a470b420c02aa1bc32
 [node name="MossTree2" type="Sprite2D" parent="."]
 position = Vector2(349, 550)
-texture = SubResource("Resource_5vs2n")
+texture = ExtResource("17_mhlit")
 
 [node name="MossTree3" type="Sprite2D" parent="."]
 position = Vector2(637, 225)
 scale = Vector2(1.5, 1.5)
-texture = SubResource("Resource_emyou")
+texture = ExtResource("17_mhlit")
 
 [node name="MossTree4" type="Sprite2D" parent="."]
 position = Vector2(211, 594)
-texture = SubResource("Resource_hbyva")
+texture = ExtResource("17_mhlit")
 
 [node name="MossTree5" type="Sprite2D" parent="."]
 position = Vector2(496, 209)
-texture = SubResource("Resource_1g6ci")
+texture = ExtResource("17_mhlit")
 
 [node name="MossTree6" type="Sprite2D" parent="."]
 position = Vector2(298, 571)
-texture = SubResource("Resource_yixhb")
+texture = ExtResource("17_mhlit")
 
 [node name="MossTree7" type="Sprite2D" parent="."]
 position = Vector2(569, 37)
-texture = SubResource("Resource_yspx0")
+texture = ExtResource("17_mhlit")
 
 [node name="PalmTree13" type="Sprite2D" parent="."]
 position = Vector2(331, 592)
-texture = SubResource("Resource_ievd3")
+texture = ExtResource("18_qtbhc")
 
 [node name="PalmTree14" type="Sprite2D" parent="."]
 position = Vector2(576, 216)
-texture = SubResource("Resource_4hxnt")
+texture = ExtResource("18_qtbhc")
 
 [node name="PalmTree15" type="Sprite2D" parent="."]
 position = Vector2(561, 223)
-texture = SubResource("Resource_qrpga")
+texture = ExtResource("18_qtbhc")
 
 [node name="PalmTree16" type="Sprite2D" parent="."]
 position = Vector2(564, 209)
-texture = SubResource("Resource_84pwa")
+texture = ExtResource("18_qtbhc")
 
 [node name="BrokenTree1" type="Sprite2D" parent="."]
 position = Vector2(609, 114)
 scale = Vector2(3, 3)
-texture = SubResource("Resource_km1a4")
+texture = ExtResource("19_bmip8")
 
 [node name="Tree2" type="Sprite2D" parent="."]
 position = Vector2(80, 494)
 scale = Vector2(0.4, 0.4)
-texture = SubResource("Resource_70oh1")
+texture = ExtResource("20_nn5rx")
 
 [node name="Tree3" type="Sprite2D" parent="."]
 position = Vector2(489, 143)
 scale = Vector2(0.4, 0.4)
 skew = 0.0401426
-texture = SubResource("Resource_53j5l")
+texture = ExtResource("20_nn5rx")
 
 [node name="Tree5" type="Sprite2D" parent="."]
 position = Vector2(454, 130)
 scale = Vector2(0.4, 0.4)
 skew = 0.0401426
-texture = SubResource("Resource_vrudt")
+texture = ExtResource("20_nn5rx")
 
 [node name="Tree4" type="Sprite2D" parent="."]
 position = Vector2(56, 461)
 scale = Vector2(0.4, 0.4)
-texture = SubResource("Resource_tkw2t")
+texture = ExtResource("20_nn5rx")
 
 [node name="Stones5" type="Sprite2D" parent="."]
 position = Vector2(449, 235)
 scale = Vector2(0.5, 0.5)
-texture = SubResource("Resource_8gckq")
+texture = ExtResource("21_thmox")
 
 [node name="Stones6" type="Sprite2D" parent="."]
 position = Vector2(639, 40)
 scale = Vector2(0.5, 0.5)
-texture = SubResource("Resource_0wt3m")
+texture = ExtResource("21_thmox")
 
 [node name="MossTree1" type="Sprite2D" parent="."]
 position = Vector2(362, 607)
-texture = SubResource("Resource_m0w42")
+texture = ExtResource("22_4tvcs")
 
 [node name="PalmTree17" type="Sprite2D" parent="."]
 position = Vector2(263, 595)
-texture = SubResource("Resource_uahxi")
+texture = ExtResource("23_ro46v")
 
 [node name="PalmTree23" type="Sprite2D" parent="."]
 position = Vector2(542, 599)
 scale = Vector2(1.5, 1.5)
-texture = SubResource("Resource_gfs5g")
+texture = ExtResource("24_lsx6y")
 
 [node name="PalmTree21" type="Sprite2D" parent="."]
 position = Vector2(499, 552)
 scale = Vector2(2.5, 2.5)
-texture = SubResource("Resource_7jeet")
+texture = ExtResource("25_vmkl8")
 
 [node name="BrokenTree3" type="Sprite2D" parent="."]
 position = Vector2(656, 106)
-texture = SubResource("Resource_5ms3k")
+texture = ExtResource("26_vfcr6")
 
 [node name="Well(1)" type="Sprite2D" parent="."]
 position = Vector2(693, 580)
 scale = Vector2(0.5, 0.5)
-texture = SubResource("Resource_tiw27")
+texture = ExtResource("27_jfsao")
 region_enabled = true
 region_rect = Rect2(0, 0, 260.664, 256)
 

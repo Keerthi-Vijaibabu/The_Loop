@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dqnju5q1g3v6i"]
 
-[ext_resource type="Texture2D" uid="uid://co8kocwtgxt6" path="res://assets/egg_collection/basket.png" id="1_ccfdg"]
+[ext_resource type="Texture2D" uid="uid://cnjy466nscdw0" path="res://assets/egg_collection/basket.png" id="1_ccfdg"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
