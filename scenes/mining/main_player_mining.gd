@@ -1,12 +1,18 @@
 extends CharacterBody2D
 
-const Gravity = 4200
-const JUMP_SPEED = -1800
-
+const GRAVITY = 4200
+const JUMP_SPEED = -900
+const MOVE_SPEED = 200  
 func _physics_process(delta):
-	velocity.y += Gravity*delta
-	if Input.is_action_pressed("ui_accept"):
-		velocity.y = JUMP_SPEED
-		$JumpSound.play()
-		
+	
+	velocity.y += GRAVITY * delta
+	velocity.x = MOVE_SPEED
+	
+	if is_on_floor():
+		if Input.is_action_pressed("ui_accept") or Input.is_action_pressed("ui_up"):
+			velocity.y = JUMP_SPEED
+			$JumpSound.play()
+	else:
+		$AnimatedSprite2D.play("jump")
+
 	move_and_slide()

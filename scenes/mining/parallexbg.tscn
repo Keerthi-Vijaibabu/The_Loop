@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c3hm7gp4iuf8a"]
+[gd_scene load_steps=4 format=3 uid="uid://c3hm7gp4iuf8a"]
 
 [ext_resource type="Texture2D" uid="uid://d3g16o4cs243r" path="res://assets/Mining/vecteezy_mine-tunnel-with-red-crystals-and-rails_15918339.jpg" id="1_pjg2j"]
 [ext_resource type="Texture2D" uid="uid://bgafc3jjndkxn" path="res://assets/Mining/vecteezy_mine-tunnel-with-deposit-of-iron-or-coal-inside_15918338.jpg" id="2_5cblb"]
 [ext_resource type="Texture2D" uid="uid://bo35hv1nf6v5u" path="res://assets/Mining/vecteezy_amethyst-mine-tunnel-inside-view-mysterious-cave_15918284.jpg" id="3_i4hpb"]
-[ext_resource type="PackedScene" uid="uid://020hs8by1myg" path="res://scenes/mining/main_player_mining.tscn" id="4_4em3e"]
 
 [node name="bg" type="ParallaxBackground"]
 scroll_offset = Vector2(398.247, -22.2246)
@@ -33,6 +32,3 @@ position = Vector2(3837, 0)
 scale = Vector2(1, 1.12326)
 texture = ExtResource("3_i4hpb")
 centered = false
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_4em3e")]
-position = Vector2(237, 182)

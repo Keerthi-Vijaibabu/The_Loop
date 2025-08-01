@@ -1,3 +1,21 @@
-[gd_scene format=3 uid="uid://c3e1qe3gwc5ks"]
+[gd_scene load_steps=4 format=3 uid="uid://c3e1qe3gwc5ks"]
+
+[ext_resource type="PackedScene" uid="uid://c3hm7gp4iuf8a" path="res://scenes/mining/parallexbg.tscn" id="1_pcmx2"]
+[ext_resource type="PackedScene" uid="uid://bgsb6qrdrw8eq" path="res://scenes/mining/ground.tscn" id="2_4ipr7"]
+[ext_resource type="PackedScene" uid="uid://020hs8by1myg" path="res://scenes/mining/main_player_mining.tscn" id="3_jdeu0"]
 
 [node name="MainMining" type="Node2D"]
+
+[node name="bg" parent="." instance=ExtResource("1_pcmx2")]
+
+[node name="Ground" parent="bg" instance=ExtResource("2_4ipr7")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_jdeu0")]
+position = Vector2(121, 404)
+scale = Vector2(1.5, 1.5)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(228.5, -74.5)
+limit_left = 0
+limit_top = 0
+limit_bottom = 512
