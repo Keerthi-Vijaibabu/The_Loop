@@ -8,6 +8,6 @@ func _physics_process(delta):
 
 func _input_event(viewport, event, shape_idx): # Destroys the object when clicked
 	if event is InputEventMouseButton and event.pressed:
-		var ScoreManager =get_tree().get_root().get_node("WoodCutting/ScoreManager")
+		var ScoreManager =get_tree().get_root().get_node("EggCollection/ScoreManager")
 		ScoreManager.add_point()
 		queue_free()  

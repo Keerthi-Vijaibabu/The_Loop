@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var spawn_object: PackedScene = preload("res://scenes/wood_cutting/logs.tscn")
+@export var spawn_object: PackedScene = preload("res://scenes/egg_collection/egg.tscn")
 
 @export var spawn_number = 50
 

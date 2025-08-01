@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://xamhw2hvc7ru"]
+
+[ext_resource type="Script" path="res://scenes/egg_collection/egg_collection.gd" id="1_3vqhb"]
+[ext_resource type="Script" path="res://scenes/egg_collection/Score_Manager.gd" id="2_tw8dp"]
+[ext_resource type="Script" path="res://scenes/egg_collection/ScoreLabel.gd" id="3_3gw3h"]
+
+[node name="EggCollection" type="Node2D"]
+script = ExtResource("1_3vqhb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="ScoreManager" type="Node2D" parent="."]
+script = ExtResource("2_tw8dp")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = -570.0
+offset_top = -323.0
+offset_right = -229.0
+offset_bottom = -219.0
+uppercase = true
+script = ExtResource("3_3gw3h")
