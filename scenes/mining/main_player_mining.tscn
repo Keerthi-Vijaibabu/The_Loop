@@ -94,7 +94,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -132,7 +132,6 @@ scale = Vector2(3.16407, 2.61719)
 sprite_frames = SubResource("SpriteFrames_g17pi")
 animation = &"jump"
 autoplay = "right"
-frame_progress = 0.986237
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_8h7ix")

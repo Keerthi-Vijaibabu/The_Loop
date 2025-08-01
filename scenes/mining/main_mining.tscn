@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3e1qe3gwc5ks"]
+[gd_scene load_steps=6 format=3 uid="uid://c3e1qe3gwc5ks"]
 
 [ext_resource type="PackedScene" uid="uid://c3hm7gp4iuf8a" path="res://scenes/mining/parallexbg.tscn" id="1_pcmx2"]
+[ext_resource type="Script" path="res://scenes/mining/main_mining.gd" id="1_v238d"]
 [ext_resource type="PackedScene" uid="uid://bgsb6qrdrw8eq" path="res://scenes/mining/ground.tscn" id="2_4ipr7"]
 [ext_resource type="PackedScene" uid="uid://020hs8by1myg" path="res://scenes/mining/main_player_mining.tscn" id="3_jdeu0"]
+[ext_resource type="PackedScene" uid="uid://bij4jyd4icxdc" path="res://scenes/mining/rock.tscn" id="5_aef7c"]
 
 [node name="MainMining" type="Node2D"]
+script = ExtResource("1_v238d")
 
 [node name="bg" parent="." instance=ExtResource("1_pcmx2")]
 
@@ -19,3 +22,6 @@ position = Vector2(228.5, -74.5)
 limit_left = 0
 limit_top = 0
 limit_bottom = 512
+
+[node name="Rock" parent="." instance=ExtResource("5_aef7c")]
+position = Vector2(1164, 497)
