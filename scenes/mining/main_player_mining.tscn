@@ -126,7 +126,7 @@ script = ExtResource("1_5pw37")
 [node name="DuckCol2" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_8h7ix")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["player"]]
 texture_filter = 1
 scale = Vector2(3.16407, 2.61719)
 sprite_frames = SubResource("SpriteFrames_g17pi")

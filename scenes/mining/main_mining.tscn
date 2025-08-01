@@ -1,27 +1,30 @@
-[gd_scene load_steps=6 format=3 uid="uid://c3e1qe3gwc5ks"]
+[gd_scene load_steps=5 format=3 uid="uid://c3e1qe3gwc5ks"]
 
 [ext_resource type="PackedScene" uid="uid://c3hm7gp4iuf8a" path="res://scenes/mining/parallexbg.tscn" id="1_pcmx2"]
 [ext_resource type="Script" path="res://scenes/mining/main_mining.gd" id="1_v238d"]
 [ext_resource type="PackedScene" uid="uid://bgsb6qrdrw8eq" path="res://scenes/mining/ground.tscn" id="2_4ipr7"]
 [ext_resource type="PackedScene" uid="uid://020hs8by1myg" path="res://scenes/mining/main_player_mining.tscn" id="3_jdeu0"]
-[ext_resource type="PackedScene" uid="uid://bij4jyd4icxdc" path="res://scenes/mining/rock.tscn" id="5_aef7c"]
 
-[node name="MainMining" type="Node2D"]
+[node name="MainMining" type="Node2D" groups=["game"]]
 script = ExtResource("1_v238d")
 
 [node name="bg" parent="." instance=ExtResource("1_pcmx2")]
 
 [node name="Ground" parent="bg" instance=ExtResource("2_4ipr7")]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_jdeu0")]
+[node name="Mining_Player" parent="." instance=ExtResource("3_jdeu0")]
 position = Vector2(121, 404)
 scale = Vector2(1.5, 1.5)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="Mining_Player"]
 position = Vector2(228.5, -74.5)
 limit_left = 0
 limit_top = 0
 limit_bottom = 512
 
-[node name="Rock" parent="." instance=ExtResource("5_aef7c")]
-position = Vector2(1164, 497)
+[node name="RockSpawnTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="RockSpawnTimer" to="." method="_on_rock_spawn_timer_timeout"]
