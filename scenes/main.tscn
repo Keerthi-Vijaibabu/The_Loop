@@ -1,29 +1,27 @@
-[gd_scene load_steps=32 format=4 uid="uid://dpm2oox6drvjx"]
+[gd_scene load_steps=30 format=4 uid="uid://dpm2oox6drvjx"]
 
-[ext_resource type="Texture2D" uid="uid://cl7mmw5ykwdox" path="res://green.jpg" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://b8j35rbog3hfb" path="res://TilesetRiver.JPG" id="2_h2yge"]
-[ext_resource type="Texture2D" uid="uid://bh40jdml2bvpc" path="res://track.png" id="3_1u8w0"]
-[ext_resource type="Texture2D" uid="uid://b2jf51qyjg3hl" path="res://cave.png" id="5_lswn8"]
-[ext_resource type="Texture2D" uid="uid://yi0045ygumsw" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Moss_tree2.png" id="6_a6jrf"]
-[ext_resource type="Texture2D" uid="uid://4bv3l7pakhvk" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Palm_tree2_2.png" id="7_xuqvo"]
-[ext_resource type="Texture2D" uid="uid://c2rfqh44yle6a" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Fruit_tree1.png" id="8_qsp4k"]
-[ext_resource type="Texture2D" uid="uid://b4nysir217grn" path="res://PNG/decor/greenery_4.png" id="9_kq58d"]
-[ext_resource type="Texture2D" uid="uid://drxw46jclgdhw" path="res://PNG/decor/stones_5.png" id="10_seu75"]
-[ext_resource type="Texture2D" uid="uid://b1nuec4527aci" path="res://PNG/decor/decor_13.png" id="11_htxhm"]
-[ext_resource type="Texture2D" uid="uid://7304k4b23rym" path="res://PNG/decor/greenery_5.png" id="12_jq2sk"]
-[ext_resource type="Texture2D" uid="uid://ckhygmltgy30e" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Tree2.png" id="13_4k2k6"]
-[ext_resource type="Texture2D" uid="uid://xl3ps56bgax" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Christmas_tree2.png" id="14_0rl1p"]
-[ext_resource type="Texture2D" uid="uid://6qa50bdgc2a8" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Tree1.png" id="15_ok6jj"]
-[ext_resource type="Texture2D" uid="uid://b8ehu6o6ttv84" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Palm_tree1_2.png" id="16_facbu"]
-[ext_resource type="Texture2D" uid="uid://cljwewsptosh2" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow/Broken_tree5.png" id="17_b1qrp"]
-[ext_resource type="Texture2D" uid="uid://lo0ad1djg1qk" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Christmas_tree2.png" id="18_come4"]
-[ext_resource type="Texture2D" uid="uid://bkaxl8fvehla6" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Burned_tree2.png" id="19_h8e4i"]
-[ext_resource type="Texture2D" uid="uid://btbprrjo6w1c8" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Tree1.png" id="20_4lmeg"]
-[ext_resource type="Texture2D" uid="uid://d1w0tp1gywxw5" path="res://craftpix-net-385863-free-top-down-trees-pixel-art/PNG/tree_2.png" id="21_0cp0l"]
-[ext_resource type="Texture2D" uid="uid://bb0opureyych6" path="res://boat (1).png" id="22_d2t1y"]
-[ext_resource type="Texture2D" uid="uid://bert0th82coix" path="res://railway.png" id="23_gngh3"]
-[ext_resource type="Texture2D" uid="uid://sbii1d16vqle" path="res://cart.png" id="24_0n3wm"]
-[ext_resource type="Texture2D" uid="uid://bupyjkwljurj0" path="res://PNG/decor/decor_4.png" id="24_1u8w0"]
+[ext_resource type="Texture2D" uid="uid://dxuauhkjhj0wf" path="res://assets/level1/green.jpg" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bk006oqaw1fwf" path="res://assets/level1/TilesetRiver.JPG" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cf8hcfhfvf62x" path="res://assets/level1/track.png" id="3_1u8w0"]
+[ext_resource type="Texture2D" uid="uid://sccdrf23kxw3" path="res://assets/level1/cave.png" id="5_lswn8"]
+[ext_resource type="Texture2D" uid="uid://dds10sg0oim02" path="res://assets/level1/Moss_tree2.png" id="6_a6jrf"]
+[ext_resource type="Texture2D" uid="uid://b1b7o4iyjh4yf" path="res://assets/level1/Palm_tree2_2.png" id="7_xuqvo"]
+[ext_resource type="Texture2D" uid="uid://eld6vdr3kaog" path="res://assets/level1/Fruit_tree1.png" id="8_qsp4k"]
+[ext_resource type="Texture2D" uid="uid://x6xna2pd161p" path="res://assets/level1/greenery_4.png" id="9_kq58d"]
+[ext_resource type="Texture2D" uid="uid://iw6yddk7q5fi" path="res://assets/level1/stones_5.png" id="10_seu75"]
+[ext_resource type="Texture2D" uid="uid://d18u0rfo00xuu" path="res://assets/level1/decor_13.png" id="11_htxhm"]
+[ext_resource type="Texture2D" uid="uid://bp6of3mmsdk6" path="res://assets/level1/greenery_5.png" id="12_jq2sk"]
+[ext_resource type="Texture2D" uid="uid://bxrinqb3kiv33" path="res://assets/level1/Tree2.png" id="13_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://c6ukow8sb0fsf" path="res://assets/level1/Palm_tree1_2.png" id="16_facbu"]
+[ext_resource type="Texture2D" uid="uid://si7xqql4hl0e" path="res://assets/level1/Broken_tree5.png" id="17_b1qrp"]
+[ext_resource type="Texture2D" uid="uid://b5q121tt7jffd" path="res://assets/level1/Christmas_tree2.png" id="18_come4"]
+[ext_resource type="Texture2D" uid="uid://j5cx7mkngajn" path="res://assets/level1/Burned_tree2.png" id="19_h8e4i"]
+[ext_resource type="Texture2D" uid="uid://cdepude7rj2yx" path="res://assets/level1/Tree1.png" id="20_4lmeg"]
+[ext_resource type="Texture2D" uid="uid://c514awjpbk4xy" path="res://assets/level1/tree_2.png" id="21_0cp0l"]
+[ext_resource type="Texture2D" uid="uid://dv5f74a8qvkbh" path="res://assets/level1/boat (1).png" id="22_d2t1y"]
+[ext_resource type="Texture2D" uid="uid://dvg6746eurvgm" path="res://assets/level1/railway.png" id="23_gngh3"]
+[ext_resource type="Texture2D" uid="uid://cnw68pn6bwjix" path="res://assets/level1/cart.png" id="24_0n3wm"]
+[ext_resource type="Texture2D" uid="uid://cg5yf0pq0uvwc" path="res://assets/level1/decor_4.png" id="24_1u8w0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qnost"]
 texture = ExtResource("2_h2yge")
@@ -4104,102 +4102,102 @@ texture = ExtResource("13_4k2k6")
 [node name="ChristmasTree2" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(7444.44, -2855.56)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("14_0rl1p")
+texture = ExtResource("18_come4")
 
 [node name="Tree1" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-3691.67, -6359.56)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree42" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3655.55, -7077.78)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree43" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-769.444, -7926.22)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree11" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1180.56, -6881.78)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree12" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(741.667, -7081.78)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree13" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1769.44, -5881.78)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree14" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4111.11, -7533.33)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree15" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3408.33, -7837.33)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree16" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1444.44, -3300)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree17" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1130.56, -3970.67)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree18" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1763.89, -7537.33)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree19" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(2777.78, -8055.55)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree21" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-633.334, -4133.33)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree22" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4400, -6933.33)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree23" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1522.22, -3277.78)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree24" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1311.11, -7277.78)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree25" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1619.44, -6004)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree26" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4358.33, -4104)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree20" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(4486.11, -7792.89)
 scale = Vector2(20, 20)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree4" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(4033.33, -2877.78)
@@ -4229,97 +4227,97 @@ texture = ExtResource("13_4k2k6")
 [node name="Tree5" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-2644.44, -7422.22)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree47" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4736.11, -5970.67)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree48" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4269.44, -6015.11)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree49" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-122.222, -6788.89)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree6" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4733.33, -3888.89)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree39" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-2288.89, -6744.44)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree40" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-2188.89, -2900)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree41" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3622.22, -5833.33)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree8" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-125, -6048.44)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree44" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4725, -6826.22)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree45" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(2175, -5737.33)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree46" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1036.11, -5804)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree30" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4722.22, -8388.89)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree34" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(4288.89, -8422.22)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree33" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(7488.89, -5622.22)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree9" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1033.33, -2966.67)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree36" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3922.22, -5855.55)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree35" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3155.56, -6188.89)
 scale = Vector2(11.1111, 11.1979)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="Tree10" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-700, -4100)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("15_ok6jj")
+texture = ExtResource("20_4lmeg")
 
 [node name="PalmTree12" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-2400, -8300)
