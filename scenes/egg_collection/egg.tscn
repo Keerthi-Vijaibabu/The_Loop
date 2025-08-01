@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cfgr1nu1fgn5y"]
 
-[ext_resource type="Script" path="res://scenes/egg_collection/egg.gd" id="1_ltuou"]
+[ext_resource type="Script" uid="uid://re02huv86pdh" path="res://scenes/egg_collection/egg.gd" id="1_ltuou"]
 [ext_resource type="Texture2D" uid="uid://be2y0o54b288k" path="res://assets/egg_collection/egg.png" id="2_cqbqo"]
 
 [node name="egg" type="CharacterBody2D"]

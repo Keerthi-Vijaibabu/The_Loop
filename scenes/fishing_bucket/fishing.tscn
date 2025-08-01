@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dnu88tqqbehvk"]
 
-[ext_resource type="Script" path="res://scenes/fishing_bucket/fishing.gd" id="1_koijf"]
-[ext_resource type="Script" path="res://scenes/fishing_bucket/Score_label.gd" id="2_xigb6"]
-[ext_resource type="Script" path="res://scenes/fishing_bucket/score_Manager.gd" id="3_ixuwu"]
+[ext_resource type="Script" uid="uid://bkbvsuvvh0gg8" path="res://scenes/fishing_bucket/fishing.gd" id="1_koijf"]
+[ext_resource type="Script" uid="uid://bmdggglt6cyd4" path="res://scenes/fishing_bucket/Score_label.gd" id="2_xigb6"]
+[ext_resource type="Script" uid="uid://c8t7tfprn7mi4" path="res://scenes/fishing_bucket/score_Manager.gd" id="3_ixuwu"]
 
 [node name="Fishing" type="Node2D"]
 script = ExtResource("1_koijf")

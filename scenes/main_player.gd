@@ -35,4 +35,3 @@ func update_animation(direction: Vector2):
 		sprite.animation = "front" if direction.y > 0 else "back"
 
 	sprite.play()
-

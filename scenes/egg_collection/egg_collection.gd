@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var spawn_object: PackedScene = preload("res://scenes/egg_collection/egg.tscn")
+#@onready var basket: CanvasLayer = $CanvasLayer
 
 @export var spawn_number = 50
 
@@ -8,6 +9,9 @@ var random = RandomNumberGenerator.new()
 
 func _ready():
 	spawn()
+
+#func _process(delta):
+	#basket.position = get_viewport().get_mouse_position()
 	
 func getRandomPosition(size) -> Vector2:
 	random.randomize()

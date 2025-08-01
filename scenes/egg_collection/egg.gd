@@ -11,4 +11,3 @@ func _input_event(viewport, event, shape_idx): # Destroys the object when clicke
 		var ScoreManager =get_tree().get_root().get_node("EggCollection/ScoreManager")
 		ScoreManager.add_point()
 		queue_free()  
-
