@@ -15,12 +15,13 @@ var screen_size: Vector2
 
 const ROCK_Y = 500
 var last_spawn_x = 0
-var rock_spawn_gap_range = Vector2(500, 1600)  
+var rock_spawn_gap_range = Vector2(300, 600)  
 
 var can_spawn_rocks = false
 
 var last_coin_x = 0
 var coin_spawn_gap_range = Vector2(500, 1600) 
+const COIN_Y = ROCK_Y - 50
 
 func _ready():
 	screen_size = get_viewport().get_visible_rect().size
@@ -30,11 +31,14 @@ func _ready():
 func new_game():
 	gold = 0
 	stones = 0
+	last_spawn_x = START_POS.x
+	last_coin_x = START_POS.x
 	can_spawn_rocks = false
 	$Mining_Player.position = START_POS
 	$Mining_Player.velocity = Vector2.ZERO
 	#$CharacterBody2D/Camera2D.position = CAM_START_POS
 	$bg/Ground.position = Vector2.ZERO
+	$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
 
 func _process(_delta):
 	$Mining_Player.position.x += speed
@@ -63,6 +67,7 @@ func spawn_rock(x_pos: float):
 func add_gold(amount: int):
 	gold += amount
 	print("Gold:", gold)
+	$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
 
 func _on_rock_spawn_timer_timeout():
 	print("Timer started")
@@ -70,5 +75,5 @@ func _on_rock_spawn_timer_timeout():
 
 func spawn_coins(x_pos: float):
 	var coin = coins.instantiate()
-	coin.position = Vector2(x_pos, ROCK_Y)
+	coin.position = Vector2(x_pos, COIN_Y)
 	add_child(coin)

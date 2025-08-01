@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dowj0ys10x4c2"]
 
-[ext_resource type="Script" uid="uid://bh1skvc2k1ync" path="res://scenes/lumberjack/lumberjack.gd" id="1_uhhq1"]
-[ext_resource type="Script" uid="uid://ddfvqaf4slp5v" path="res://scenes/lumberjack/Scoremanager.gd" id="2_3ciio"]
-[ext_resource type="Script" uid="uid://mublx1k7s2x4" path="res://scenes/lumberjack/Scorelabel.gd" id="3_5k3s4"]
+[ext_resource type="Script" path="res://scenes/lumberjack/lumberjack.gd" id="1_uhhq1"]
+[ext_resource type="Script" path="res://scenes/lumberjack/Scoremanager.gd" id="2_3ciio"]
+[ext_resource type="Script" path="res://scenes/lumberjack/Scorelabel.gd" id="3_5k3s4"]
 [ext_resource type="Texture2D" uid="uid://ddpqns743ngn8" path="res://icon.svg" id="4_3ciio"]
 
 [node name="Lumberjack" type="Node2D"]

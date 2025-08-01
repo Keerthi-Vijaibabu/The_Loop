@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://020hs8by1myg"]
 
-[ext_resource type="Script" uid="uid://p0sa6sd0rr21" path="res://scenes/mining/main_player_mining.gd" id="1_5pw37"]
+[ext_resource type="Script" path="res://scenes/mining/main_player_mining.gd" id="1_5pw37"]
 [ext_resource type="Texture2D" uid="uid://bdl01yjch7t4v" path="res://assets/Swordsman1/Swordsman_lvl1_Run_full.png" id="2_wgnnt"]
 [ext_resource type="AudioStream" uid="uid://ct64638nk87b3" path="res://assets/Mining/sound/jump-sound-14839.mp3" id="3_8cflc"]
 [ext_resource type="Texture2D" uid="uid://cw3mib5chqhqf" path="res://assets/Swordsman1/Swordsman_lvl1_Walk_full.png" id="3_brybk"]
