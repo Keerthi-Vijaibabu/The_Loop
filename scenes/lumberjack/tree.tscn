@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dio4cf3h4mdix"]
+
+[ext_resource type="Texture2D" uid="uid://ddpqns743ngn8" path="res://icon.svg" id="1_2d1xq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_egpeh"]
+
+[node name="Tree" type="CharacterBody2D"]
+input_pickable = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2d1xq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_egpeh")
