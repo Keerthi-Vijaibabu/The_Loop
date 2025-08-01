@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://db5yt4iq1so35"]
+
+[ext_resource type="Script" uid="uid://dcy8b7ekdxprm" path="res://scenes/fishing_bucket/fish.gd" id="1_oa2vx"]
+[ext_resource type="Texture2D" uid="uid://ddpqns743ngn8" path="res://icon.svg" id="2_v5v7g"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jnptn"]
+
+[node name="Fish" type="CharacterBody2D"]
+script = ExtResource("1_oa2vx")
+
+[node name="CollosionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_jnptn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_v5v7g")
