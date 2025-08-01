@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const GRAVITY = 98.0  
+const GRAVITY = 9.0  
 
 func _physics_process(delta):
 	velocity.y += GRAVITY * delta
@@ -11,3 +11,4 @@ func _input_event(viewport, event, shape_idx): # Destroys the object when clicke
 		var ScoreManager =get_tree().get_root().get_node("EggCollection/ScoreManager")
 		ScoreManager.add_point()
 		queue_free()  
+

@@ -2,4 +2,4 @@ extends Label
 
 func _process(delta):
 	var ScoreManager =get_tree().get_root().get_node("EggCollection/ScoreManager")
-	text = "Score: %d" % ScoreManager.score
+	text = "Eggs Collected: %d" % ScoreManager.score

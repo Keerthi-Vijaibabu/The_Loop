@@ -12,7 +12,7 @@ func _ready():
 func getRandomPosition(size) -> Vector2:
 	random.randomize()
 	var x = random.randf_range(-abs(size/2), abs(size/2))
-	var y = -2000  #gives me some time for the narration box before the objects start to fall
+	var y = -1500  #gives me some time for the narration box before the objects start to fall
 	return Vector2(x,y)
 	
 func spawn():

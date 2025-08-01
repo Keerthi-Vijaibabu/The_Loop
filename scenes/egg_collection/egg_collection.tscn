@@ -1,21 +1,108 @@
-[gd_scene load_steps=4 format=3 uid="uid://xamhw2hvc7ru"]
+[gd_scene load_steps=9 format=3 uid="uid://xamhw2hvc7ru"]
 
-[ext_resource type="Script" uid="uid://bmf8ddl785ttg" path="res://scenes/egg_collection/egg_collection.gd" id="1_3vqhb"]
-[ext_resource type="Script" uid="uid://jog4v11cu6u5" path="res://scenes/egg_collection/Score_Manager.gd" id="2_tw8dp"]
-[ext_resource type="Script" uid="uid://ck2m8v1e3ee2" path="res://scenes/egg_collection/ScoreLabel.gd" id="3_3gw3h"]
+[ext_resource type="Script" path="res://scenes/egg_collection/egg_collection.gd" id="1_3vqhb"]
+[ext_resource type="Script" path="res://scenes/egg_collection/Score_Manager.gd" id="2_tw8dp"]
+[ext_resource type="Script" path="res://scenes/egg_collection/ScoreLabel.gd" id="3_3gw3h"]
+[ext_resource type="Texture2D" uid="uid://cnqwtvafup0a4" path="res://assets/egg_collection/chicken.png" id="4_bscvr"]
+[ext_resource type="Texture2D" uid="uid://cik01qknvsb2d" path="res://assets/egg_collection/bg.jpg" id="4_lvutp"]
+[ext_resource type="Texture2D" uid="uid://w8jut1edni36" path="res://assets/egg_collection/wood.png" id="5_1fxg0"]
+
+[sub_resource type="SystemFont" id="SystemFont_mkgrl"]
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_t14jy"]
+line_spacing = 10.0
+font = SubResource("SystemFont_mkgrl")
+font_size = 50
+font_color = Color(0.231373, 0.756863, 0.592157, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
 
 [node name="EggCollection" type="Node2D"]
 script = ExtResource("1_3vqhb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
+[node name="backkground" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="backkground"]
+position = Vector2(0, -1)
+
+[node name="Sprite2D" type="Sprite2D" parent="backkground/Area2D"]
+position = Vector2(-34, -3.75)
+scale = Vector2(1.84324, 2.13474)
+texture = ExtResource("4_lvutp")
+
+[node name="wood" type="Node2D" parent="backkground"]
+z_index = 1
+
+[node name="Wood" type="Sprite2D" parent="backkground/wood"]
+position = Vector2(-357, -270)
+scale = Vector2(5.34177, 3.88)
+texture = ExtResource("5_1fxg0")
+
+[node name="Wood2" type="Sprite2D" parent="backkground/wood"]
+position = Vector2(337, -270)
+scale = Vector2(5.34177, 3.88)
+texture = ExtResource("5_1fxg0")
+
+[node name="Chickens" type="Node2D" parent="backkground"]
+z_index = 1
+
+[node name="Chicken" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(-654, -271)
+scale = Vector2(0.188319, 0.210811)
+texture = ExtResource("4_bscvr")
+
+[node name="Chicken4" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(-512, -272)
+scale = Vector2(0.188319, 0.210811)
+texture = ExtResource("4_bscvr")
+
+[node name="Chicken2" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(-235, -273)
+scale = Vector2(0.192413, 0.210811)
+texture = ExtResource("4_bscvr")
+
+[node name="Chicken5" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(52, -272)
+scale = Vector2(0.192413, 0.210811)
+texture = ExtResource("4_bscvr")
+
+[node name="Chicken7" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(195, -273)
+scale = Vector2(0.192413, 0.210811)
+texture = ExtResource("4_bscvr")
+
+[node name="Chicken8" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(341, -272)
+scale = Vector2(0.192413, 0.210811)
+texture = ExtResource("4_bscvr")
+
+[node name="Chicken9" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(484, -272)
+scale = Vector2(0.192413, 0.210811)
+texture = ExtResource("4_bscvr")
+
+[node name="Chicken6" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(-90, -273)
+scale = Vector2(0.192413, 0.210811)
+texture = ExtResource("4_bscvr")
+
+[node name="Chicken3" type="Sprite2D" parent="backkground/Chickens"]
+position = Vector2(-375, -273)
+scale = Vector2(0.188319, 0.210811)
+texture = ExtResource("4_bscvr")
+
 [node name="ScoreManager" type="Node2D" parent="."]
 script = ExtResource("2_tw8dp")
 
 [node name="ScoreLabel" type="Label" parent="."]
+z_index = 1
 offset_left = -570.0
 offset_top = -323.0
 offset_right = -229.0
 offset_bottom = -219.0
+label_settings = SubResource("LabelSettings_t14jy")
 uppercase = true
 script = ExtResource("3_3gw3h")
