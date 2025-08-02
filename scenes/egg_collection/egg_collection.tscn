@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://xamhw2hvc7ru"]
+[gd_scene load_steps=13 format=3 uid="uid://xamhw2hvc7ru"]
 
 [ext_resource type="Script" uid="uid://bmf8ddl785ttg" path="res://scenes/egg_collection/egg_collection.gd" id="1_3vqhb"]
 [ext_resource type="Script" uid="uid://jog4v11cu6u5" path="res://scenes/egg_collection/Score_Manager.gd" id="2_tw8dp"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bhc7fai6lmud5" path="res://assets/egg_collection/bg.jpg" id="4_lvutp"]
 [ext_resource type="Texture2D" uid="uid://drac0n0j0jjre" path="res://assets/egg_collection/wood.png" id="5_1fxg0"]
 [ext_resource type="AudioStream" uid="uid://bykn1yjcp64hj" path="res://assets/egg_collection/audio/egg_music.mp3" id="7_cgftx"]
+[ext_resource type="AudioStream" uid="uid://ubpy85oxvfqy" path="res://assets/audio/timer-with-chime-101253.mp3" id="8_jfspv"]
 
 [sub_resource type="SystemFont" id="SystemFont_mkgrl"]
 font_weight = 600
@@ -18,6 +19,13 @@ font_size = 50
 font_color = Color(0.231373, 0.756863, 0.592157, 1)
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_cgftx"]
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_jfspv"]
+font = SubResource("SystemFont_cgftx")
+font_size = 30
 
 [node name="EggCollection" type="Node2D"]
 script = ExtResource("1_3vqhb")
@@ -100,10 +108,10 @@ script = ExtResource("2_tw8dp")
 
 [node name="ScoreLabel" type="Label" parent="."]
 z_index = 1
-offset_left = -570.0
-offset_top = -323.0
-offset_right = -229.0
-offset_bottom = -219.0
+offset_left = -707.0
+offset_top = -180.0
+offset_right = -366.0
+offset_bottom = -76.0
 label_settings = SubResource("LabelSettings_t14jy")
 uppercase = true
 script = ExtResource("3_3gw3h")
@@ -112,3 +120,20 @@ script = ExtResource("3_3gw3h")
 stream = ExtResource("7_cgftx")
 volume_db = -10.0
 autoplay = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 120.0
+autostart = true
+
+[node name="TimeLabel" type="Label" parent="."]
+z_index = 1
+offset_left = 342.0
+offset_top = -172.0
+offset_right = 487.0
+offset_bottom = -130.0
+label_settings = SubResource("LabelSettings_jfspv")
+horizontal_alignment = 2
+
+[node name="Timer_Beeps" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_jfspv")
+volume_db = 16.0
