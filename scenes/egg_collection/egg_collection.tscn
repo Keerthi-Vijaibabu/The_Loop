@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://xamhw2hvc7ru"]
+[gd_scene load_steps=14 format=3 uid="uid://xamhw2hvc7ru"]
 
 [ext_resource type="Script" uid="uid://bmf8ddl785ttg" path="res://scenes/egg_collection/egg_collection.gd" id="1_3vqhb"]
 [ext_resource type="Script" uid="uid://jog4v11cu6u5" path="res://scenes/egg_collection/Score_Manager.gd" id="2_tw8dp"]
@@ -26,6 +26,9 @@ font_weight = 600
 [sub_resource type="LabelSettings" id="LabelSettings_jfspv"]
 font = SubResource("SystemFont_cgftx")
 font_size = 30
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jfspv"]
+size = Vector2(1370.5, 269)
 
 [node name="EggCollection" type="Node2D"]
 script = ExtResource("1_3vqhb")
@@ -120,9 +123,10 @@ script = ExtResource("3_3gw3h")
 stream = ExtResource("7_cgftx")
 volume_db = -10.0
 autoplay = true
+parameters/looping = true
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 120.0
+wait_time = 110.0
 autostart = true
 
 [node name="TimeLabel" type="Label" parent="."]
@@ -137,3 +141,13 @@ horizontal_alignment = 2
 [node name="Timer_Beeps" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_jfspv")
 volume_db = 16.0
+
+[node name="MissZone" type="Area2D" parent="."]
+disable_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MissZone"]
+position = Vector2(-31.25, 458)
+shape = SubResource("RectangleShape2D_jfspv")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="MissZone" to="." method="_on_miss_zone_body_entered"]
