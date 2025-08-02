@@ -138,3 +138,4 @@ shape = SubResource("CapsuleShape2D_8h7ix")
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_8cflc")
+bus = &"SFX"

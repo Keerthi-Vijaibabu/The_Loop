@@ -46,9 +46,8 @@ offset_bottom = 96.0
 label_settings = SubResource("LabelSettings_6tc4u")
 uppercase = true
 
-[node name="bgMusic" type="AudioStreamPlayer2D" parent="."]
+[node name="bgMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_gwp7v")
-volume_db = 16.0
 autoplay = true
 bus = &"Music"
 

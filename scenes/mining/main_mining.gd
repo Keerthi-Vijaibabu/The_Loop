@@ -37,7 +37,6 @@ func new_game():
 	can_spawn_rocks = false
 	$Mining_Player.position = START_POS
 	$Mining_Player.velocity = Vector2.ZERO
-	#$CharacterBody2D/Camera2D.position = CAM_START_POS
 	$bg/Ground.position = Vector2.ZERO
 	$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
 	$RockSpawnTimer.stop()
@@ -50,10 +49,11 @@ func new_game():
 
 func _process(_delta):
 	$Mining_Player.position.x += speed
-
 	if ($Mining_Player.position.x - $bg/Ground.position.x) > screen_size.x * 1.5:
 		$bg/Ground.position.x += screen_size.x
-	#await get_tree().create_timer(1).timeout
+	
+	if $bgMusic.playing == false:
+		$bgMusic.play()
 		
 	if can_spawn_rocks and $Mining_Player.position.x > last_spawn_x:
 		var gap = randf_range(rock_spawn_gap_range.x, rock_spawn_gap_range.y)
@@ -74,7 +74,6 @@ func spawn_rock(x_pos: float):
 	
 func add_gold(amount: int):
 	gold += amount
-	print("Gold:", gold)
 	$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
 
 func _on_rock_spawn_timer_timeout():
