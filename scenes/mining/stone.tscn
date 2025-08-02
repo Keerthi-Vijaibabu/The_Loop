@@ -1,0 +1,76 @@
+[gd_scene load_steps=12 format=3 uid="uid://y3af16nfs5q1"]
+
+[ext_resource type="Script" uid="uid://lhlx0dqgtrmn" path="res://scenes/mining/stone.gd" id="1_alxn1"]
+[ext_resource type="Texture2D" uid="uid://bc2pkmnr14y5f" path="res://assets/Mining/stone.png" id="1_epc36"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alxn1"]
+atlas = ExtResource("1_epc36")
+region = Rect2(0, 0, 48, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2rt64"]
+atlas = ExtResource("1_epc36")
+region = Rect2(48, 0, 48, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4guqu"]
+atlas = ExtResource("1_epc36")
+region = Rect2(96, 0, 48, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fh2op"]
+atlas = ExtResource("1_epc36")
+region = Rect2(144, 0, 48, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfwai"]
+atlas = ExtResource("1_epc36")
+region = Rect2(192, 0, 48, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4q5o6"]
+atlas = ExtResource("1_epc36")
+region = Rect2(240, 0, 48, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkyar"]
+atlas = ExtResource("1_epc36")
+region = Rect2(288, 0, 48, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ugt1f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alxn1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2rt64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4guqu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fh2op")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfwai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4q5o6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkyar")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_epc36"]
+radius = 16.0
+
+[node name="Stone" type="Area2D"]
+script = ExtResource("1_alxn1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["stone"]]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ugt1f")
+autoplay = "default"
+frame_progress = 0.43847
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_epc36")

@@ -2,12 +2,13 @@ extends Node2D
 
 var rocks = preload("res://scenes/mining/rock.tscn")
 var coins = preload("res://scenes/mining/gold.tscn")
+var stones = preload("res://scenes/mining/stone.tscn")
 
 const START_POS := Vector2(150, 485)
 
 
 var gold = 0
-var stones = 0
+var stone = 0
 
 const START_SPEED = 10.0
 var speed = START_SPEED
@@ -31,7 +32,7 @@ func _ready():
 func new_game():
 	$bgMusic.play()
 	gold = 0
-	stones = 0
+	stone = 0
 	last_spawn_x = START_POS.x
 	last_coin_x = START_POS.x
 	can_spawn_rocks = false
@@ -66,6 +67,14 @@ func _process(_delta):
 		var next_x = last_coin_x + gap
 		spawn_coins(next_x)
 		last_coin_x = next_x
+	
+		if $Mining_Player.position.x > last_coin_x + 1000:  # additional check to prevent crowding
+			var stone_chance = randi() % 2  # 50% chance
+			if stone_chance == 0:
+				gap = randf_range(coin_spawn_gap_range.x, coin_spawn_gap_range.y)
+				next_x = last_coin_x + gap
+				spawn_stones(next_x)
+
 
 func spawn_rock(x_pos: float):
 	var rock = rocks.instantiate()
@@ -75,6 +84,10 @@ func spawn_rock(x_pos: float):
 func add_gold(amount: int):
 	gold += amount
 	$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
+	
+func add_stone(amount: int):
+	stone += amount
+	$CanvasLayer/stoneLabel.text = "Stone: %d" % stone
 
 func _on_rock_spawn_timer_timeout():
 	print("Timer started")
@@ -85,3 +98,14 @@ func spawn_coins(x_pos: float):
 		var coin = coins.instantiate()
 		coin.position = Vector2(x_pos, COIN_Y)
 		add_child(coin)
+		
+func spawn_stones(x_pos: float):
+	var gap = 40
+	for i in range(10):
+		var s = stones.instantiate()
+		s.position = Vector2(x_pos + i * gap, COIN_Y)
+		add_child(s)
+
+
+func _on_timer_timeout() -> void:
+	get_tree().change_scene_to_file("res://scenes/mining/gameover.tscn")
