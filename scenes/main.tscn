@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://dpm2oox6drvjx"]
+[gd_scene load_steps=34 format=4 uid="uid://dpm2oox6drvjx"]
 
 [ext_resource type="Texture2D" uid="uid://b625n6y6sdtey" path="res://assets/level1/green.jpg" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://bgip75lv5l1ti" path="res://scenes/main.gd" id="1_y6deb"]
@@ -3944,6 +3944,9 @@ size = Vector2(8, 653)
 [sub_resource type="CircleShape2D" id="CircleShape2D_og1vs"]
 radius = 55.1453
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6deb"]
+size = Vector2(302.5, 60)
+
 [node name="Node2D" type="Node2D"]
 position = Vector2(19, 13)
 script = ExtResource("1_y6deb")
@@ -4593,4 +4596,19 @@ position = Vector2(1, 1)
 position = Vector2(1051, 27)
 shape = SubResource("CircleShape2D_og1vs")
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="river" type="CollisionPolygon2D" parent="Area2D"]
+build_mode = 1
+polygon = PackedVector2Array(1128, 83, 1070, 109, 950, 209, 876, 309, 826, 494, 813, 622, 978, 628, 1025, 436, 1053, 316, 1128, 260)
+metadata/_edit_lock_ = true
+
+[node name="wood" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wood"]
+position = Vector2(413.75, 127)
+shape = SubResource("RectangleShape2D_y6deb")
+
 [connection signal="body_entered" from="mining" to="." method="_on_mining_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="wood" to="." method="_on_wood_body_entered"]

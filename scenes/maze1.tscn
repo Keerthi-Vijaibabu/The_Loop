@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://baxweubpqorb1"]
+[gd_scene load_steps=13 format=3 uid="uid://baxweubpqorb1"]
 
+[ext_resource type="Script" uid="uid://rlmd155n1aua" path="res://scenes/maze_1.gd" id="1_4c7ck"]
 [ext_resource type="Texture2D" uid="uid://dt8hcjn01abgb" path="res://assets/maze/g1.jpg" id="1_61jxt"]
 [ext_resource type="Texture2D" uid="uid://ddjgh6uom5yy7" path="res://assets/maze/maze.jpg" id="2_3o6fg"]
 [ext_resource type="Texture2D" uid="uid://bmqboup0lguu1" path="res://assets/maze/rice.png" id="3_8qjrh"]
 [ext_resource type="Texture2D" uid="uid://dn6n4ie0d5642" path="res://assets/maze/arrow.png" id="4_3o6fg"]
-[ext_resource type="PackedScene" uid="uid://dt0y3a3rqar7y" path="res://scenes/main_player.tscn" id="5_pnauf"]
+[ext_resource type="PackedScene" uid="uid://bu4o6dkag0umu" path="res://scenes/maze/main_player1.tscn" id="6_4c7ck"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48nwl"]
 texture = ExtResource("2_3o6fg")
@@ -5241,7 +5242,20 @@ sources/0 = SubResource("TileSetAtlasSource_48nwl")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pnauf"]
 size = Vector2(1151, 13)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c7ck"]
+size = Vector2(85, 81)
+
+[sub_resource type="SystemFont" id="SystemFont_4c7ck"]
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_hpd5b"]
+font = SubResource("SystemFont_4c7ck")
+font_size = 30
+outline_size = 3
+outline_color = Color(0.0177324, 0.0177324, 0.0177324, 1)
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_4c7ck")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1155.0
@@ -5287,5 +5301,27 @@ shape = SubResource("RectangleShape2D_pnauf")
 position = Vector2(475, 444)
 shape = SubResource("RectangleShape2D_pnauf")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("5_pnauf")]
-position = Vector2(88, 536)
+[node name="target" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="target"]
+position = Vector2(1045.5, 71.5)
+shape = SubResource("RectangleShape2D_4c7ck")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 160.0
+offset_bottom = 64.0
+label_settings = SubResource("LabelSettings_hpd5b")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("6_4c7ck")]
+position = Vector2(80, 544)
+
+[connection signal="body_entered" from="target" to="." method="_on_target_body_entered"]

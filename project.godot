@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Loop"
-run/main_scene="uid://b71642swichoi"
+run/main_scene="uid://dpm2oox6drvjx"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 

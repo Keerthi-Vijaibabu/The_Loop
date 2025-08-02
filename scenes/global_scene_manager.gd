@@ -1,14 +1,19 @@
 extends Node
 
-var score: int = 0
-var high_score: int = 0
+
+var stone: int = 0
+var gold: int = 0
+var points: int = 0
+
+#maze_time
+var maze_time = 0
 
 const SAVE_PATH := "user://save_data.json"
 
 func save_game():
 	var save_data = {
-		"score": score,
-		"high_score": high_score
+		"gold": gold,
+		"stone": stone
 	}
 
 	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
@@ -23,5 +28,5 @@ func load_game():
 
 		var result = JSON.parse_string(content)
 		if result:
-			score = result.get("score", 0)
-			high_score = result.get("high_score", 0)
+			gold = result.get("gold", 0)
+			stone = result.get("stone", 0)

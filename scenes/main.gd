@@ -17,4 +17,9 @@ func change_scene_1():
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "CharacterBody2D":
-		call_deferred("change_scene")
+		call_deferred("change_scene_2")
+
+
+func _on_wood_body_entered(body: Node2D) -> void:
+	if body.name == "CharacterBody2D":
+		call_deferred("change_scene_1")
