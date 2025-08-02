@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bftqgxtknx2v1"]
+
+[ext_resource type="Texture2D" uid="uid://pxupqp3ruxp0" path="res://assets/fishing/fish-removebg-preview.png" id="1_oa2vx"]
+[ext_resource type="Script" uid="uid://dcy8b7ekdxprm" path="res://scenes/fishing/fish.gd" id="1_v5v7g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5v7g"]
+
+[node name="Fish" type="CharacterBody2D"]
+position = Vector2(14, 289)
+script = ExtResource("1_v5v7g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 2.00006)
+scale = Vector2(0.658203, 0.795918)
+texture = ExtResource("1_oa2vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_v5v7g")

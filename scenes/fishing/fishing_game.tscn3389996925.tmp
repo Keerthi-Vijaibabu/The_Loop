@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c04l2ar0w10ya"]
+
+[ext_resource type="Script" uid="uid://bmdggglt6cyd4" path="res://scenes/fishing/Score_Label.gd" id="1_fiuiy"]
+[ext_resource type="Script" uid="uid://dhyb2acdfu7cb" path="res://scenes/fishing/fishing_game.gd" id="1_wsytv"]
+[ext_resource type="Script" uid="uid://c8t7tfprn7mi4" path="res://scenes/fishing/Score_Manager.gd" id="2_wsytv"]
+
+[node name="FishingGame" type="Node2D"]
+script = ExtResource("1_wsytv")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("1_fiuiy")
+
+[node name="ScoreManager" type="Node2D" parent="."]
+script = ExtResource("2_wsytv")
+
+[node name="Message Label" type="Label" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Timer" type="Timer" parent="."]
