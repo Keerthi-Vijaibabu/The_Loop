@@ -1,34 +1,33 @@
-[gd_scene load_steps=30 format=3 uid="uid://ih1lsf14wcyo"]
+[gd_scene load_steps=29 format=3 uid="uid://ih1lsf14wcyo"]
 
-[ext_resource type="Texture2D" uid="uid://b2q0f4lpls0px" path="res://assets/level2/g1.jpg" id="1_1mhn8"]
-[ext_resource type="Texture2D" uid="uid://ssgcnj6vk5sk" path="res://assets/level2/Barn.png" id="2_3yxjw"]
-[ext_resource type="Texture2D" uid="uid://b6lkorp2cjjso" path="res://assets/level2/Chicken-ezgif.com-crop.png" id="3_elgsa"]
-[ext_resource type="Texture2D" uid="uid://b3q4k2sc3bcme" path="res://assets/level2/Goat.png" id="5_0rof8"]
-[ext_resource type="Texture2D" uid="uid://nsqgfrh8t872" path="res://assets/level2/Cow.png" id="6_w8cd7"]
-[ext_resource type="Texture2D" uid="uid://bghxa1316gcio" path="res://assets/level2/Store (1).png" id="7_l8hla"]
-[ext_resource type="Texture2D" uid="uid://8fhaiiocif2l" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Tree2.png" id="8_rol5h"]
-[ext_resource type="Texture2D" uid="uid://bbu3iglrds0iy" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Palm_tree2_2.png" id="9_vdxg2"]
-[ext_resource type="Texture2D" uid="uid://bg2f600crauoc" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Moss_tree3.png" id="10_jfsao"]
-[ext_resource type="Texture2D" uid="uid://0ojinxlh0q3j" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Fruit_tree1.png" id="11_sfdux"]
-[ext_resource type="Texture2D" uid="uid://bcv1dqh04iqes" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Flower_tree2.png" id="12_8jpxv"]
-[ext_resource type="Texture2D" uid="uid://dfkygmhyja6p3" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Fruit_tree3.png" id="13_irhcr"]
-[ext_resource type="Texture2D" uid="uid://dkln5xrlvgmqx" path="res://assets/level2/DoubleDoor1.png" id="14_k8w7c"]
-[ext_resource type="Texture2D" uid="uid://d4m3db1c01ebu" path="res://assets/level2/1.png" id="16_dacrv"]
-[ext_resource type="Texture2D" uid="uid://cotoxtgyherwo" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Moss_tree2.png" id="17_mhlit"]
-[ext_resource type="Texture2D" uid="uid://cx5nrqwl7dltp" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_shadow/Palm_tree1_3.png" id="18_qtbhc"]
-[ext_resource type="Texture2D" uid="uid://cde7qas7vddhu" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Broken_tree1.png" id="19_bmip8"]
-[ext_resource type="Texture2D" uid="uid://c3vjsk68n0m0o" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/tree_2.png" id="20_nn5rx"]
+[ext_resource type="Texture2D" uid="uid://dt8hcjn01abgb" path="res://assets/maze/g1.jpg" id="1_1mhn8"]
+[ext_resource type="Texture2D" uid="uid://ddd3ey2ax0xda" path="res://assets/level2/Barn.png" id="2_3yxjw"]
+[ext_resource type="Texture2D" uid="uid://bojehqok74ypi" path="res://assets/level2/Chicken-ezgif.com-crop.png" id="3_elgsa"]
+[ext_resource type="Texture2D" uid="uid://d18bgbgsj6xii" path="res://assets/level2/Goat.png" id="5_0rof8"]
+[ext_resource type="Texture2D" uid="uid://cxxqdwdof0ngd" path="res://assets/level2/Cow.png" id="6_w8cd7"]
+[ext_resource type="Texture2D" uid="uid://y6b85kmx1e2l" path="res://assets/level2/Store (1).png" id="7_l8hla"]
+[ext_resource type="Texture2D" uid="uid://b0qnb7lm8t81o" path="res://assets/level1/Tree2.png" id="8_rol5h"]
+[ext_resource type="Texture2D" uid="uid://c5nritq8debkk" path="res://assets/level1/Palm_tree2_2.png" id="9_vdxg2"]
+[ext_resource type="Texture2D" uid="uid://rjgg6fu1a0xn" path="res://assets/level2/Moss_tree3.png" id="10_jfsao"]
+[ext_resource type="Texture2D" uid="uid://c5yokkiig32g4" path="res://assets/level1/Fruit_tree1.png" id="11_sfdux"]
+[ext_resource type="Texture2D" uid="uid://di5xc4cl0d7l5" path="res://assets/level2/Flower_tree2.png" id="12_8jpxv"]
+[ext_resource type="Texture2D" uid="uid://d24u5sem3xf1d" path="res://assets/level2/Fruit_tree3.png" id="13_irhcr"]
+[ext_resource type="Texture2D" uid="uid://c3dinki2b80i6" path="res://assets/level2/DoubleDoor1.png" id="14_k8w7c"]
+[ext_resource type="Texture2D" uid="uid://qvom11esihx2" path="res://assets/level2/1.png" id="16_dacrv"]
+[ext_resource type="Texture2D" uid="uid://dlg8l0kuruk4b" path="res://assets/level1/Moss_tree2.png" id="17_mhlit"]
+[ext_resource type="Texture2D" uid="uid://baxfggcfoqf6o" path="res://assets/level2/Broken_tree1.png" id="19_bmip8"]
+[ext_resource type="Texture2D" uid="uid://cinpekdickf7x" path="res://assets/level1/tree_2.png" id="20_nn5rx"]
 [ext_resource type="Texture2D" uid="uid://dolobmvm4car7" path="res://assets/level1/stones_5.png" id="21_thmox"]
-[ext_resource type="Texture2D" uid="uid://cgfrk4p25c8ku" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Moss_tree1.png" id="22_4tvcs"]
-[ext_resource type="Texture2D" uid="uid://bptcujs481qan" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Palm_tree1_3.png" id="23_ro46v"]
-[ext_resource type="Texture2D" uid="uid://bfsopbdfpbb6a" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Palm_tree2_3.png" id="24_lsx6y"]
-[ext_resource type="Texture2D" uid="uid://c0ggy52ypts4h" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees/Palm_tree2_1.png" id="25_vmkl8"]
-[ext_resource type="Texture2D" uid="uid://cebg3mbeqdj81" path="res://assets/level2/craftpix-net-385863-free-top-down-trees-pixel-art/PNG/Assets_separately/Trees_texture_shadow_dark/Broken_tree3.png" id="26_vfcr6"]
-[ext_resource type="Texture2D" uid="uid://dm3ymkb1c6dkl" path="res://assets/level2/Well (1).png" id="27_jfsao"]
+[ext_resource type="Texture2D" uid="uid://bu4iiymh5n5ya" path="res://assets/level2/Moss_tree1.png" id="22_4tvcs"]
+[ext_resource type="Texture2D" uid="uid://1knbmhwkhf4t" path="res://assets/level2/Palm_tree1_3.png" id="23_ro46v"]
+[ext_resource type="Texture2D" uid="uid://c6svyra888k7p" path="res://assets/level2/Palm_tree2_3.png" id="24_lsx6y"]
+[ext_resource type="Texture2D" uid="uid://bqadndpevf1u1" path="res://assets/level2/Palm_tree2_1.png" id="25_vmkl8"]
+[ext_resource type="Texture2D" uid="uid://bqkmasmddy6cj" path="res://assets/level2/Broken_tree3.png" id="26_vfcr6"]
+[ext_resource type="Texture2D" uid="uid://b3q0wwlcvmqfg" path="res://assets/level2/Well (1).png" id="27_jfsao"]
 [ext_resource type="Texture2D" uid="uid://d31n7g3b6qoe8" path="res://assets/level1/TilesetRiver.JPG" id="28_sfdux"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8jpxv"]
-size = Vector2(1150, 647.5)
+size = Vector2(9.25, 650.75)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irhcr"]
 texture = ExtResource("28_sfdux")
@@ -263,18 +262,35 @@ sources/0 = SubResource("TileSetAtlasSource_irhcr")
 
 [node name="Node2D" type="Node2D"]
 
-[node name="mapboundary" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="mapboundary"]
-position = Vector2(574, 327.25)
-shape = SubResource("RectangleShape2D_8jpxv")
-
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 2.0
 offset_top = -1.0
 offset_right = 1152.0
 offset_bottom = 649.0
 texture = ExtResource("1_1mhn8")
+
+[node name="mapboundary" type="StaticBody2D" parent="TextureRect"]
+position = Vector2(-2, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/mapboundary"]
+position = Vector2(-2, 323.375)
+shape = SubResource("RectangleShape2D_8jpxv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TextureRect/mapboundary"]
+position = Vector2(1153, 325)
+shape = SubResource("RectangleShape2D_8jpxv")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TextureRect/mapboundary"]
+position = Vector2(576, 653)
+rotation = 1.5708
+scale = Vector2(1.8, 1.8)
+shape = SubResource("RectangleShape2D_8jpxv")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TextureRect/mapboundary"]
+position = Vector2(569, 2.325)
+rotation = 1.5708
+scale = Vector2(1.8, 1.8)
+shape = SubResource("RectangleShape2D_8jpxv")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 
@@ -615,19 +631,19 @@ texture = ExtResource("17_mhlit")
 
 [node name="PalmTree13" type="Sprite2D" parent="."]
 position = Vector2(331, 592)
-texture = ExtResource("18_qtbhc")
+texture = ExtResource("23_ro46v")
 
 [node name="PalmTree14" type="Sprite2D" parent="."]
 position = Vector2(576, 216)
-texture = ExtResource("18_qtbhc")
+texture = ExtResource("23_ro46v")
 
 [node name="PalmTree15" type="Sprite2D" parent="."]
 position = Vector2(561, 223)
-texture = ExtResource("18_qtbhc")
+texture = ExtResource("23_ro46v")
 
 [node name="PalmTree16" type="Sprite2D" parent="."]
 position = Vector2(564, 209)
-texture = ExtResource("18_qtbhc")
+texture = ExtResource("23_ro46v")
 
 [node name="BrokenTree1" type="Sprite2D" parent="."]
 position = Vector2(609, 114)
