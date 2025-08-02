@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjxf2f5fxgt0i"]
+
+[ext_resource type="Texture2D" uid="uid://p8pl5c028m6s" path="res://assets/go_maze/g1.jpg" id="1_ogrsr"]
+[ext_resource type="Texture2D" uid="uid://gu7a1sauemv5" path="res://assets/go_maze/rice.png" id="2_mfxcn"]
+
+[sub_resource type="FontVariation" id="FontVariation_pnghk"]
+
+[sub_resource type="FontFile" id="FontFile_hq4jn"]
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.59, 0.59, 0, 0.576471)
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_ogrsr")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 299.0
+offset_top = 52.0
+offset_right = 824.0
+offset_bottom = 189.0
+theme_override_colors/font_color = Color(0.955763, 0.653765, 0.910025, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/font = SubResource("FontVariation_pnghk")
+theme_override_font_sizes/font_size = 100
+text = "Game over"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 326.0
+offset_top = 223.0
+offset_right = 446.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/font = SubResource("FontFile_hq4jn")
+theme_override_font_sizes/font_size = 50
+text = "Time:"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 323.0
+offset_top = 341.0
+offset_right = 456.0
+offset_bottom = 414.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/font = SubResource("FontFile_hq4jn")
+theme_override_font_sizes/font_size = 50
+text = "Coins:"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 325.0
+offset_top = 462.0
+offset_right = 470.0
+offset_bottom = 535.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/font = SubResource("FontFile_hq4jn")
+theme_override_font_sizes/font_size = 50
+text = "Points:"
+
+[node name="Rice" type="Sprite2D" parent="."]
+position = Vector2(971, 370)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_mfxcn")

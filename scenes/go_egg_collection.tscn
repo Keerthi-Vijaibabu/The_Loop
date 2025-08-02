@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://kkkk1ttfwr2v"]
+
+[ext_resource type="Texture2D" uid="uid://bhc7fai6lmud5" path="res://assets/egg_collection/bg.jpg" id="1_5lva5"]
+[ext_resource type="Texture2D" uid="uid://dwal1q1vwqeij" path="res://assets/egg_collection/egg.png" id="2_b3jv4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.359069, 0.359069, 0.359069, 0.407843)
+offset_top = 2.0
+offset_right = 1157.0
+offset_bottom = 646.0
+texture = ExtResource("1_5lva5")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 456.0
+offset_top = 52.0
+offset_right = 781.0
+offset_bottom = 225.0
+rotation = 0.00509685
+theme_override_colors/font_color = Color(0.881627, 0.485045, 3.85046e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.32549, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Game Over
+"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 350.0
+offset_top = 217.0
+offset_right = 675.0
+offset_bottom = 390.0
+rotation = 0.00509685
+theme_override_colors/font_color = Color(0.893198, 0.491717, 7.70092e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.32549, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Time:"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 336.0
+offset_top = 352.0
+offset_right = 661.0
+offset_bottom = 525.0
+rotation = 0.00509685
+theme_override_colors/font_color = Color(0.881627, 0.485045, 3.85046e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.32549, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Coins:"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 320.0
+offset_top = 484.0
+offset_right = 645.0
+offset_bottom = 657.0
+rotation = 0.00509685
+theme_override_colors/font_color = Color(0.81844, 0.448613, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.32549, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Points:"
+
+[node name="Egg" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.360784)
+position = Vector2(111, 289)
+scale = Vector2(0.263848, 0.242015)
+texture = ExtResource("2_b3jv4")
+
+[node name="Egg5" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.360784)
+position = Vector2(336, 88)
+scale = Vector2(0.263848, 0.242015)
+texture = ExtResource("2_b3jv4")
+
+[node name="Egg6" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.360784)
+position = Vector2(944, 88)
+scale = Vector2(0.263848, 0.242015)
+texture = ExtResource("2_b3jv4")
+
+[node name="Egg4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.376471)
+position = Vector2(943, 545)
+scale = Vector2(0.263848, 0.242015)
+texture = ExtResource("2_b3jv4")
+
+[node name="Egg3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.360784)
+position = Vector2(1062, 302)
+scale = Vector2(0.263848, 0.242015)
+texture = ExtResource("2_b3jv4")
+
+[node name="Egg2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.333333)
+position = Vector2(245, 518)
+scale = Vector2(0.263848, 0.242015)
+texture = ExtResource("2_b3jv4")
