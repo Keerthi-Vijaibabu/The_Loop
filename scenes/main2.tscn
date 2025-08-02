@@ -1,6 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://ih1lsf14wcyo"]
+[gd_scene load_steps=32 format=3 uid="uid://3sa8ocipunl1"]
 
 [ext_resource type="Texture2D" uid="uid://dt8hcjn01abgb" path="res://assets/maze/g1.jpg" id="1_1mhn8"]
+[ext_resource type="Script" uid="uid://cpco7w2r8mtf1" path="res://scenes/main_2.gd" id="1_b77ej"]
 [ext_resource type="Texture2D" uid="uid://ddd3ey2ax0xda" path="res://assets/level2/Barn.png" id="2_3yxjw"]
 [ext_resource type="Texture2D" uid="uid://bojehqok74ypi" path="res://assets/level2/Chicken-ezgif.com-crop.png" id="3_elgsa"]
 [ext_resource type="Texture2D" uid="uid://d18bgbgsj6xii" path="res://assets/level2/Goat.png" id="5_0rof8"]
@@ -260,7 +261,14 @@ texture = ExtResource("28_sfdux")
 [sub_resource type="TileSet" id="TileSet_k8w7c"]
 sources/0 = SubResource("TileSetAtlasSource_irhcr")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljnj7"]
+size = Vector2(161, 185)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b77ej"]
+size = Vector2(293, 205)
+
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_b77ej")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 2.0
@@ -292,151 +300,153 @@ rotation = 1.5708
 scale = Vector2(1.8, 1.8)
 shape = SubResource("RectangleShape2D_8jpxv")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Background" type="Node2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2"]
+[node name="Sprite2D2" type="Sprite2D" parent="Background"]
 
-[node name="Barn24" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Sprite2D2"]
+
+[node name="Barn24" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(817, 352)
 skew = 0.619592
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(191.541, 1166.06, 37.2553, 82.4133)
 
-[node name="Barn23" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn23" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(93, 81)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(573.861, 321.08, 129.242, 170.177)
 
-[node name="Barn22" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn22" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(226, 81)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(573.861, 321.08, 129.242, 170.177)
 
-[node name="Barn21" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn21" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(697, 505)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
 
-[node name="Barn20" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn20" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(761, 503)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
 
-[node name="Barn19" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn19" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(663, 506)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
 
-[node name="Barn15" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn15" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(634, 507)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
 
-[node name="Barn16" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn16" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(634, 507)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
 
-[node name="Barn14" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn14" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(730, 504)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(68.7762, 994.936, 58.5641, 65.2191)
 
-[node name="Barn13" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn13" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(167, 173)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(250.568, 1061.15, 133.798, 97.671)
 
-[node name="Barn17" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn17" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(615, 549)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(11.6539, 949.104, 44.3276, 114.951)
 
-[node name="Barn18" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn18" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(770, 545)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(11.6539, 949.104, 44.3276, 114.951)
 
-[node name="Barn12" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn12" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(841, 196)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(613.101, 270, 91.3001, 51.7)
 
-[node name="Barn3" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn3" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(844, 120)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(195.563, 280.874, 191.965, 236.031)
 
-[node name="Store(1)" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Store(1)" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(127, 563)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("7_l8hla")
 region_enabled = true
 region_rect = Rect2(25.4215, 18.3968, 467.769, 474.381)
 
-[node name="Cow2" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Cow2" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(784, 324)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("6_w8cd7")
 region_enabled = true
 region_rect = Rect2(0, 33.2893, 512, 444.629)
 
-[node name="Cow" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Cow" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(792, 266)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("6_w8cd7")
 region_enabled = true
 region_rect = Rect2(0, 33.2893, 512, 444.629)
 
-[node name="Barn9" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn9" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(887, 295)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(129.846, 928.627, 124.685, 64.887)
 
-[node name="Barn4" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn4" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(851, 82)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(195.563, 522.891, 202.312, 184.156)
 
-[node name="Barn5" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn5" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(850, 153)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(226.486, 1161.07, 63.955, 78.2361)
 
-[node name="Barn8" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn8" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(833, 149)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(226.486, 1161.07, 63.955, 78.2361)
 
-[node name="Barn10" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn10" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(863, 154)
 scale = Vector2(0.35, 0.35)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(226.486, 1161.07, 63.955, 78.2361)
 
-[node name="Barn6" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn6" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(1091, 281)
 rotation = 1.57603
 scale = Vector2(0.5, 0.5)
@@ -444,126 +454,126 @@ texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(380.698, 1020.38, 256.813, 139.462)
 
-[node name="Barn7" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn7" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(845, 144)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(533.8, 695.8, 93.5001, 34.1001)
 
-[node name="Barn11" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn11" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(980, 221)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(188.211, 1248.52, 43.8517, 64.8446)
 
-[node name="Barn2" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn2" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(1046, 95)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 region_rect = Rect2(511.232, 794.884, 127.267, 222.894)
 
-[node name="Chicken-ezgif_com-crop" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Chicken-ezgif_com-crop" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(1129, 184)
 scale = Vector2(2, 2)
 texture = ExtResource("3_elgsa")
 
-[node name="Chicken-ezgif_com-crop2" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Chicken-ezgif_com-crop2" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(962, 155)
 scale = Vector2(2, 2)
 texture = ExtResource("3_elgsa")
 
-[node name="Chicken-ezgif_com-crop3" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Chicken-ezgif_com-crop3" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(961, 94)
 scale = Vector2(2, 2)
 texture = ExtResource("3_elgsa")
 
-[node name="1" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="1" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(1012, 542)
 scale = Vector2(1.9, 1.5)
 texture = ExtResource("16_dacrv")
 
-[node name="Barn" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Barn" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(256, 514)
 texture = ExtResource("2_3yxjw")
 region_enabled = true
 
-[node name="Goat" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Goat" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(976, 293)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("5_0rof8")
 
-[node name="Goat2" type="Sprite2D" parent="Sprite2D2/CollisionShape2D"]
+[node name="Goat2" type="Sprite2D" parent="Background/Sprite2D2/CollisionShape2D"]
 position = Vector2(982, 261)
 rotation = -0.162316
 scale = Vector2(0.1, 0.1)
 skew = 0.0401426
 texture = ExtResource("5_0rof8")
 
-[node name="Tree2" type="Sprite2D" parent="Sprite2D2"]
+[node name="Tree2" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(724, 39)
 texture = ExtResource("8_rol5h")
 
-[node name="Tree3" type="Sprite2D" parent="Sprite2D2"]
+[node name="Tree3" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(724, 354)
 texture = ExtResource("8_rol5h")
 
-[node name="Tree4" type="Sprite2D" parent="Sprite2D2"]
+[node name="Tree4" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(721, 104)
 texture = ExtResource("8_rol5h")
 
-[node name="Tree5" type="Sprite2D" parent="Sprite2D2"]
+[node name="Tree5" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(722, 249)
 texture = ExtResource("8_rol5h")
 
-[node name="Tree6" type="Sprite2D" parent="Sprite2D2"]
+[node name="Tree6" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(721, 175)
 texture = ExtResource("8_rol5h")
 
-[node name="Tree7" type="Sprite2D" parent="Sprite2D2"]
+[node name="Tree7" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(1033, 216)
 texture = ExtResource("8_rol5h")
 
-[node name="PalmTree22" type="Sprite2D" parent="Sprite2D2"]
+[node name="PalmTree22" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(1020, 352)
 texture = ExtResource("9_vdxg2")
 
-[node name="PalmTree23" type="Sprite2D" parent="Sprite2D2"]
+[node name="PalmTree23" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(1123, 36)
 texture = ExtResource("9_vdxg2")
 
-[node name="PalmTree24" type="Sprite2D" parent="Sprite2D2"]
+[node name="PalmTree24" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(1128, 355)
 texture = ExtResource("9_vdxg2")
 
-[node name="FruitTree1" type="Sprite2D" parent="Sprite2D2"]
+[node name="FruitTree1" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(872, 602)
 texture = ExtResource("11_sfdux")
 
-[node name="FruitTree2" type="Sprite2D" parent="Sprite2D2"]
+[node name="FruitTree2" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(323, 39)
 texture = ExtResource("11_sfdux")
 
-[node name="FruitTree4" type="Sprite2D" parent="Sprite2D2"]
+[node name="FruitTree4" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(28, 170)
 texture = ExtResource("11_sfdux")
 
-[node name="FlowerTree2" type="Sprite2D" parent="Sprite2D2"]
+[node name="FlowerTree2" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(959, 30)
 texture = ExtResource("12_8jpxv")
 
-[node name="FruitTree3" type="Sprite2D" parent="Sprite2D2"]
+[node name="FruitTree3" type="Sprite2D" parent="Background/Sprite2D2"]
 position = Vector2(1140, 237)
 texture = ExtResource("13_irhcr")
 
-[node name="DoubleDoor1" type="Sprite2D" parent="."]
+[node name="DoubleDoor1" type="Sprite2D" parent="Background"]
 position = Vector2(686, 79)
-rotation = -4.72112
+rotation = 1.56207
 skew = -0.757473
 texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
-[node name="DoubleDoor8" type="Sprite2D" parent="."]
+[node name="DoubleDoor8" type="Sprite2D" parent="Background"]
 position = Vector2(965, 398)
 rotation = -3.11018
 skew = 0.305433
@@ -571,7 +581,7 @@ texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
-[node name="DoubleDoor9" type="Sprite2D" parent="."]
+[node name="DoubleDoor9" type="Sprite2D" parent="Background"]
 position = Vector2(1086, 399)
 rotation = -3.11018
 skew = 0.26529
@@ -579,7 +589,7 @@ texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
-[node name="DoubleDoor6" type="Sprite2D" parent="."]
+[node name="DoubleDoor6" type="Sprite2D" parent="Background"]
 position = Vector2(753, 400)
 rotation = -3.11018
 skew = 0.466003
@@ -587,141 +597,155 @@ texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
-[node name="DoubleDoor2" type="Sprite2D" parent="."]
+[node name="DoubleDoor2" type="Sprite2D" parent="Background"]
 position = Vector2(685, 337)
-rotation = -4.72112
+rotation = 1.56207
 scale = Vector2(1, 0.9)
 skew = -0.757473
 texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
-[node name="DoubleDoor3" type="Sprite2D" parent="."]
+[node name="DoubleDoor3" type="Sprite2D" parent="Background"]
 position = Vector2(685, 209)
-rotation = -4.72112
+rotation = 1.56207
 skew = -0.757473
 texture = ExtResource("14_k8w7c")
 region_enabled = true
 region_rect = Rect2(0, 28.5849, 129.287, 35.4151)
 
-[node name="MossTree2" type="Sprite2D" parent="."]
+[node name="MossTree2" type="Sprite2D" parent="Background"]
 position = Vector2(349, 550)
 texture = ExtResource("17_mhlit")
 
-[node name="MossTree3" type="Sprite2D" parent="."]
+[node name="MossTree3" type="Sprite2D" parent="Background"]
 position = Vector2(637, 225)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("17_mhlit")
 
-[node name="MossTree4" type="Sprite2D" parent="."]
+[node name="MossTree4" type="Sprite2D" parent="Background"]
 position = Vector2(211, 594)
 texture = ExtResource("17_mhlit")
 
-[node name="MossTree5" type="Sprite2D" parent="."]
+[node name="MossTree5" type="Sprite2D" parent="Background"]
 position = Vector2(496, 209)
 texture = ExtResource("17_mhlit")
 
-[node name="MossTree6" type="Sprite2D" parent="."]
+[node name="MossTree6" type="Sprite2D" parent="Background"]
 position = Vector2(298, 571)
 texture = ExtResource("17_mhlit")
 
-[node name="MossTree7" type="Sprite2D" parent="."]
+[node name="MossTree7" type="Sprite2D" parent="Background"]
 position = Vector2(569, 37)
 texture = ExtResource("17_mhlit")
 
-[node name="PalmTree13" type="Sprite2D" parent="."]
+[node name="PalmTree13" type="Sprite2D" parent="Background"]
 position = Vector2(331, 592)
 texture = ExtResource("23_ro46v")
 
-[node name="PalmTree14" type="Sprite2D" parent="."]
+[node name="PalmTree14" type="Sprite2D" parent="Background"]
 position = Vector2(576, 216)
 texture = ExtResource("23_ro46v")
 
-[node name="PalmTree15" type="Sprite2D" parent="."]
+[node name="PalmTree15" type="Sprite2D" parent="Background"]
 position = Vector2(561, 223)
 texture = ExtResource("23_ro46v")
 
-[node name="PalmTree16" type="Sprite2D" parent="."]
+[node name="PalmTree16" type="Sprite2D" parent="Background"]
 position = Vector2(564, 209)
 texture = ExtResource("23_ro46v")
 
-[node name="BrokenTree1" type="Sprite2D" parent="."]
+[node name="BrokenTree1" type="Sprite2D" parent="Background"]
 position = Vector2(609, 114)
 scale = Vector2(3, 3)
 texture = ExtResource("19_bmip8")
 
-[node name="Tree2" type="Sprite2D" parent="."]
+[node name="Tree2" type="Sprite2D" parent="Background"]
 position = Vector2(80, 494)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("20_nn5rx")
 
-[node name="Tree3" type="Sprite2D" parent="."]
+[node name="Tree3" type="Sprite2D" parent="Background"]
 position = Vector2(489, 143)
 scale = Vector2(0.4, 0.4)
-skew = 0.0401426
+skew = 0.0401425
 texture = ExtResource("20_nn5rx")
 
-[node name="Tree5" type="Sprite2D" parent="."]
+[node name="Tree5" type="Sprite2D" parent="Background"]
 position = Vector2(454, 130)
 scale = Vector2(0.4, 0.4)
-skew = 0.0401426
+skew = 0.0401425
 texture = ExtResource("20_nn5rx")
 
-[node name="Tree4" type="Sprite2D" parent="."]
+[node name="Tree4" type="Sprite2D" parent="Background"]
 position = Vector2(56, 461)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("20_nn5rx")
 
-[node name="Stones5" type="Sprite2D" parent="."]
+[node name="Stones5" type="Sprite2D" parent="Background"]
 position = Vector2(449, 235)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("21_thmox")
 
-[node name="Stones6" type="Sprite2D" parent="."]
+[node name="Stones6" type="Sprite2D" parent="Background"]
 position = Vector2(639, 40)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("21_thmox")
 
-[node name="MossTree1" type="Sprite2D" parent="."]
+[node name="MossTree1" type="Sprite2D" parent="Background"]
 position = Vector2(362, 607)
 texture = ExtResource("22_4tvcs")
 
-[node name="PalmTree17" type="Sprite2D" parent="."]
+[node name="PalmTree17" type="Sprite2D" parent="Background"]
 position = Vector2(263, 595)
 texture = ExtResource("23_ro46v")
 
-[node name="PalmTree23" type="Sprite2D" parent="."]
+[node name="PalmTree23" type="Sprite2D" parent="Background"]
 position = Vector2(542, 599)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("24_lsx6y")
 
-[node name="PalmTree21" type="Sprite2D" parent="."]
+[node name="PalmTree21" type="Sprite2D" parent="Background"]
 position = Vector2(499, 552)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("25_vmkl8")
 
-[node name="BrokenTree3" type="Sprite2D" parent="."]
+[node name="BrokenTree3" type="Sprite2D" parent="Background"]
 position = Vector2(656, 106)
 texture = ExtResource("26_vfcr6")
 
-[node name="Well(1)" type="Sprite2D" parent="."]
+[node name="Well(1)" type="Sprite2D" parent="Background"]
 position = Vector2(693, 580)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("27_jfsao")
 region_enabled = true
 region_rect = Rect2(0, 0, 260.664, 256)
 
-[node name="MossTree8" type="Sprite2D" parent="."]
+[node name="MossTree8" type="Sprite2D" parent="Background"]
 position = Vector2(722, 302)
 texture = ExtResource("10_jfsao")
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap" parent="Background"]
 tile_set = SubResource("TileSet_k8w7c")
 format = 2
 layer_0/tile_data = PackedInt32Array(2293803, 393216, 11, 2359338, 393216, 11, 2359337, 393216, 11, 2293801, 393216, 11, 2293802, 393216, 11, 2228266, 393216, 11, 2228267, 393216, 11, 2228268, 393216, 11, 2293804, 393216, 11, 2359340, 393216, 11, 2359339, 393216, 11, 2424874, 393216, 11, 2424873, 393216, 11, 2490410, 393216, 11, 2490411, 393216, 11, 2424876, 393216, 11, 2424875, 393216, 11, 2359341, 393216, 11, 2293805, 393216, 11, 2228265, 393216, 11, 2424877, 393216, 10, 2490412, 393216, 10, 2228269, 393216, 10, 2490409, 393216, 10)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="Background"]
 limit_left = 0
 limit_top = 0
 limit_right = 1150
 limit_bottom = 650
+
+[node name="farm" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="farm"]
+position = Vector2(1047.5, 99.5)
+shape = SubResource("RectangleShape2D_ljnj7")
+
+[node name="maze" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="maze"]
+position = Vector2(165.5, 113.5)
+shape = SubResource("RectangleShape2D_b77ej")
+
+[connection signal="body_entered" from="farm" to="." method="_on_area_2d_body_entered"]

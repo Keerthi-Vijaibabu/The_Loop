@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://dpm2oox6drvjx"]
+[gd_scene load_steps=42 format=4 uid="uid://dpm2oox6drvjx"]
 
 [ext_resource type="Texture2D" uid="uid://b625n6y6sdtey" path="res://assets/level1/green.jpg" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://bgip75lv5l1ti" path="res://scenes/main.gd" id="1_y6deb"]
@@ -3947,9 +3947,38 @@ radius = 55.1453
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y6deb"]
 size = Vector2(302.5, 60)
 
+[sub_resource type="SystemFont" id="SystemFont_y6deb"]
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_og1vs"]
+font = SubResource("SystemFont_y6deb")
+font_size = 20
+
+[sub_resource type="SystemFont" id="SystemFont_2wyq8"]
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_vxglm"]
+font = SubResource("SystemFont_2wyq8")
+font_size = 20
+
+[sub_resource type="SystemFont" id="SystemFont_2f3dj"]
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_yq6so"]
+font = SubResource("SystemFont_2f3dj")
+font_size = 20
+
+[sub_resource type="SystemFont" id="SystemFont_fv21b"]
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_tel4y"]
+font = SubResource("SystemFont_fv21b")
+font_size = 20
+
 [node name="Node2D" type="Node2D"]
 position = Vector2(19, 13)
 script = ExtResource("1_y6deb")
+MAIN_PLAYER_MINING = null
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -4608,6 +4637,36 @@ metadata/_edit_lock_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wood"]
 position = Vector2(413.75, 127)
 shape = SubResource("RectangleShape2D_y6deb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PointLabel" type="Label" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 22.0
+offset_right = 124.0
+offset_bottom = 67.0
+label_settings = SubResource("LabelSettings_og1vs")
+
+[node name="GoldLabel" type="Label" parent="CanvasLayer"]
+offset_left = 10.0
+offset_top = 177.0
+offset_right = 134.0
+offset_bottom = 231.0
+label_settings = SubResource("LabelSettings_vxglm")
+
+[node name="StoneLabel" type="Label" parent="CanvasLayer"]
+offset_left = 13.0
+offset_top = 127.0
+offset_right = 138.0
+offset_bottom = 165.0
+label_settings = SubResource("LabelSettings_yq6so")
+
+[node name="WoodLabel" type="Label" parent="CanvasLayer"]
+offset_left = 10.0
+offset_top = 77.0
+offset_right = 111.0
+offset_bottom = 111.0
+label_settings = SubResource("LabelSettings_tel4y")
 
 [connection signal="body_entered" from="mining" to="." method="_on_mining_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

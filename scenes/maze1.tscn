@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://baxweubpqorb1"]
+[gd_scene load_steps=14 format=3 uid="uid://baxweubpqorb1"]
 
 [ext_resource type="Script" uid="uid://rlmd155n1aua" path="res://scenes/maze_1.gd" id="1_4c7ck"]
 [ext_resource type="Texture2D" uid="uid://dt8hcjn01abgb" path="res://assets/maze/g1.jpg" id="1_61jxt"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bmqboup0lguu1" path="res://assets/maze/rice.png" id="3_8qjrh"]
 [ext_resource type="Texture2D" uid="uid://dn6n4ie0d5642" path="res://assets/maze/arrow.png" id="4_3o6fg"]
 [ext_resource type="PackedScene" uid="uid://bu4o6dkag0umu" path="res://scenes/maze/main_player1.tscn" id="6_4c7ck"]
+[ext_resource type="AudioStream" uid="uid://dx4q51qkitr51" path="res://assets/maze/2. Nightshade.ogg" id="7_hpd5b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48nwl"]
 texture = ExtResource("2_3o6fg")
@@ -5323,5 +5324,9 @@ label_settings = SubResource("LabelSettings_hpd5b")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("6_4c7ck")]
 position = Vector2(80, 544)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_hpd5b")
+autoplay = true
 
 [connection signal="body_entered" from="target" to="." method="_on_target_body_entered"]

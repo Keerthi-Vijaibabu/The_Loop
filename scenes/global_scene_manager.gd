@@ -1,9 +1,13 @@
 extends Node
 
-
+#level 1
+var wood: int = 0
 var stone: int = 0
 var gold: int = 0
 var points: int = 0
+
+#level 2
+
 
 #maze_time
 var maze_time = 0

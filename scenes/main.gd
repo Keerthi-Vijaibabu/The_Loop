@@ -2,6 +2,22 @@ extends Node2D
 
 @export var MAIN_PLAYER_MINING = preload("res://scenes/mining/main_mining.tscn")
 
+@onready var point_label: Label = $CanvasLayer/PointLabel
+@onready var gold_label: Label = $CanvasLayer/GoldLabel
+@onready var stone_label: Label = $CanvasLayer/StoneLabel
+@onready var wood_label: Label = $CanvasLayer/WoodLabel
+
+func _ready() -> void:
+	point_label.text = "Point: %d" % GlobalSceneManager.points
+	gold_label.text = "Gold: %d" % GlobalSceneManager.gold
+	stone_label.text = "Stone: %d" % GlobalSceneManager.stone
+	wood_label.text = "Wood: %d" % GlobalSceneManager.wood
+
+func _process():
+	point_label.text = "Point: %d" % GlobalSceneManager.points
+	gold_label.text = "Gold: %d" % GlobalSceneManager.gold
+	stone_label.text = "Stone: %d" % GlobalSceneManager.stone
+	wood_label.text = "Wood: %d" % GlobalSceneManager.wood
 
 func _on_mining_body_entered(body: Node2D) -> void:
 	if body.name == "CharacterBody2D":
