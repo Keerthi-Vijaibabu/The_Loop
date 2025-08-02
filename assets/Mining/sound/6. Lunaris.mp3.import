@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ds4e76t4cg2re"
+path="res://.godot/imported/6. Lunaris.mp3-917bdc53310bf76bfe6c4063bf4a38be.mp3str"
+
+[deps]
+
+source_file="res://assets/Mining/sound/6. Lunaris.mp3"
+dest_files=["res://.godot/imported/6. Lunaris.mp3-917bdc53310bf76bfe6c4063bf4a38be.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

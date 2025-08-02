@@ -20,7 +20,7 @@ var rock_spawn_gap_range = Vector2(300, 600)
 var can_spawn_rocks = false
 
 var last_coin_x = 0
-var coin_spawn_gap_range = Vector2(500, 1600) 
+var coin_spawn_gap_range = Vector2(2000, 5000) 
 const COIN_Y = ROCK_Y - 50
 
 func _ready():
@@ -29,6 +29,7 @@ func _ready():
 	new_game()
 
 func new_game():
+	$bgMusic.play()
 	gold = 0
 	stones = 0
 	last_spawn_x = START_POS.x
@@ -39,6 +40,13 @@ func new_game():
 	#$CharacterBody2D/Camera2D.position = CAM_START_POS
 	$bg/Ground.position = Vector2.ZERO
 	$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
+	$RockSpawnTimer.stop()
+	$RockSpawnTimer.start()
+	
+	for child in get_children():
+		if child.is_in_group("rock") or child.is_in_group("gold"):
+			child.queue_free()
+			
 
 func _process(_delta):
 	$Mining_Player.position.x += speed
@@ -74,6 +82,7 @@ func _on_rock_spawn_timer_timeout():
 	can_spawn_rocks = true
 
 func spawn_coins(x_pos: float):
-	var coin = coins.instantiate()
-	coin.position = Vector2(x_pos, COIN_Y)
-	add_child(coin)
+	for i in range(0,10):
+		var coin = coins.instantiate()
+		coin.position = Vector2(x_pos, COIN_Y)
+		add_child(coin)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bij4jyd4icxdc"]
 
 [ext_resource type="Script" uid="uid://bhydxut4npqt3" path="res://scenes/mining/rock.gd" id="1_eca5d"]
-[ext_resource type="Texture2D" uid="uid://1rtsiy2x832l" path="res://assets/Mining/rock.png" id="1_x3f0b"]
+[ext_resource type="Texture2D" uid="uid://bo4p6p6krj4xt" path="res://assets/Mining/rock.png" id="1_x3f0b"]
 
 [node name="Rock" type="Area2D" groups=["Obstacle"]]
 script = ExtResource("1_eca5d")
