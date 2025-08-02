@@ -1,7 +1,6 @@
-[gd_scene load_steps=34 format=4 uid="uid://b71642swichoi"]
+[gd_scene load_steps=32 format=4 uid="uid://dpm2oox6drvjx"]
 
 [ext_resource type="Texture2D" uid="uid://b625n6y6sdtey" path="res://assets/level1/green.jpg" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://bgip75lv5l1ti" path="res://scenes/main.gd" id="1_y6deb"]
 [ext_resource type="Texture2D" uid="uid://d31n7g3b6qoe8" path="res://assets/level1/TilesetRiver.JPG" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://1sb28hmutscr" path="res://assets/level1/track.png" id="3_1u8w0"]
 [ext_resource type="Texture2D" uid="uid://dq1xdbbcarvc5" path="res://assets/level1/cave.png" id="5_lswn8"]
@@ -13,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://c5ds1xryxslnf" path="res://assets/level1/decor_13.png" id="11_htxhm"]
 [ext_resource type="Texture2D" uid="uid://djoiry8r6mvyu" path="res://assets/level1/greenery_5.png" id="12_jq2sk"]
 [ext_resource type="Texture2D" uid="uid://b0qnb7lm8t81o" path="res://assets/level1/Tree2.png" id="13_4k2k6"]
+[ext_resource type="Texture2D" uid="uid://pdhkffq1k6sj" path="res://assets/level1/Christmas_tree2.png" id="14_0rl1p"]
+[ext_resource type="Texture2D" uid="uid://cdfu0ijs58wee" path="res://assets/level1/Tree1.png" id="15_ok6jj"]
 [ext_resource type="Texture2D" uid="uid://cqfgv0ui5sedr" path="res://assets/level1/Palm_tree1_2.png" id="16_facbu"]
 [ext_resource type="Texture2D" uid="uid://du6pd5mgfbpcv" path="res://assets/level1/Broken_tree5.png" id="17_b1qrp"]
 [ext_resource type="Texture2D" uid="uid://pdhkffq1k6sj" path="res://assets/level1/Christmas_tree2.png" id="18_come4"]
@@ -21,7 +22,6 @@
 [ext_resource type="Texture2D" uid="uid://cinpekdickf7x" path="res://assets/level1/tree_2.png" id="21_0cp0l"]
 [ext_resource type="Texture2D" uid="uid://dxqxchdagwv02" path="res://assets/level1/boat (1).png" id="22_d2t1y"]
 [ext_resource type="Texture2D" uid="uid://dbeq2rddc7kif" path="res://assets/level1/railway.png" id="23_gngh3"]
-[ext_resource type="PackedScene" uid="uid://dt0y3a3rqar7y" path="res://scenes/main_player.tscn" id="23_pm3ni"]
 [ext_resource type="Texture2D" uid="uid://cxtqp71dcacfh" path="res://assets/level1/cart.png" id="24_0n3wm"]
 [ext_resource type="Texture2D" uid="uid://d2dfktyww41js" path="res://assets/level1/decor_4.png" id="24_1u8w0"]
 
@@ -3938,18 +3938,11 @@ sources/2 = SubResource("TileSetAtlasSource_d13ii")
 [sub_resource type="TileSet" id="TileSet_lquwl"]
 physics_layer_0/collision_layer = 1
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_og1vs"]
-radius = 55.0091
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6deb"]
-size = Vector2(1193, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_og1vs"]
-size = Vector2(20, 676)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1u8w0"]
+size = Vector2(8, 653)
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(19, 13)
-script = ExtResource("1_y6deb")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -4111,102 +4104,102 @@ texture = ExtResource("13_4k2k6")
 [node name="ChristmasTree2" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(7444.44, -2855.56)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("18_come4")
+texture = ExtResource("14_0rl1p")
 
 [node name="Tree1" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-3691.67, -6359.56)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree42" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3655.55, -7077.78)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree43" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-769.444, -7926.22)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree11" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1180.56, -6881.78)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree12" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(741.667, -7081.78)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree13" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1769.44, -5881.78)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree14" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4111.11, -7533.33)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree15" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3408.33, -7837.33)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree16" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1444.44, -3300)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree17" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1130.56, -3970.67)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree18" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1763.89, -7537.33)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree19" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(2777.78, -8055.55)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree21" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-633.334, -4133.33)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree22" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4400, -6933.33)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree23" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1522.22, -3277.78)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree24" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1311.11, -7277.78)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree25" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(1619.44, -6004)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree26" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4358.33, -4104)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree20" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(4486.11, -7792.89)
 scale = Vector2(20, 20)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree4" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(4033.33, -2877.78)
@@ -4236,97 +4229,97 @@ texture = ExtResource("13_4k2k6")
 [node name="Tree5" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-2644.44, -7422.22)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree47" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4736.11, -5970.67)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree48" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4269.44, -6015.11)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree49" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-122.222, -6788.89)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree6" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4733.33, -3888.89)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree39" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-2288.89, -6744.44)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree40" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-2188.89, -2900)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree41" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3622.22, -5833.33)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree8" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-125, -6048.44)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree44" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4725, -6826.22)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree45" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(2175, -5737.33)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree46" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1036.11, -5804)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree30" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-4722.22, -8388.89)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree34" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(4288.89, -8422.22)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree33" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(7488.89, -5622.22)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree9" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-1033.33, -2966.67)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree36" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3922.22, -5855.55)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree35" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(3155.56, -6188.89)
 scale = Vector2(11.1111, 11.1979)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="Tree10" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-700, -4100)
 scale = Vector2(11.1111, 11.1111)
-texture = ExtResource("20_4lmeg")
+texture = ExtResource("15_ok6jj")
 
 [node name="PalmTree12" type="Sprite2D" parent="TextureRect/player/Sprite2D/CollisionShape2D"]
 position = Vector2(-2400, -8300)
@@ -4557,33 +4550,30 @@ visible = false
 tile_set = SubResource("TileSet_lquwl")
 format = 2
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("23_pm3ni")]
-z_index = 1
-position = Vector2(554, 305)
+[node name="mapboundary" type="StaticBody2D" parent="."]
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(1045, 29)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mapboundary"]
+position = Vector2(-20, 306.5)
+shape = SubResource("RectangleShape2D_1u8w0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_og1vs")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="mapboundary"]
+position = Vector2(1131, 312)
+shape = SubResource("RectangleShape2D_1u8w0")
 
-[node name="boundary" type="Area2D" parent="."]
-disable_mode = 2
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="mapboundary"]
+position = Vector2(561, 635)
+rotation = 1.5708
+scale = Vector2(1.8, 1.8)
+shape = SubResource("RectangleShape2D_1u8w0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="boundary"]
-position = Vector2(558.5, -23)
-shape = SubResource("RectangleShape2D_y6deb")
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="mapboundary"]
+position = Vector2(558, -12)
+rotation = 1.5708
+scale = Vector2(1.8, 1.8)
+shape = SubResource("RectangleShape2D_1u8w0")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="boundary"]
-position = Vector2(549, 642)
-shape = SubResource("RectangleShape2D_y6deb")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="boundary"]
-position = Vector2(-28, 305)
-shape = SubResource("RectangleShape2D_og1vs")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="boundary"]
-position = Vector2(1142, 309)
-shape = SubResource("RectangleShape2D_og1vs")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 1150
+limit_bottom = 645
