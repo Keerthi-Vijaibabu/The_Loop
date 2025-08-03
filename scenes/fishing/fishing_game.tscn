@@ -1,15 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://c04l2ar0w10ya"]
+[gd_scene load_steps=5 format=3 uid="uid://c04l2ar0w10ya"]
 
 [ext_resource type="Script" uid="uid://bmdggglt6cyd4" path="res://scenes/fishing/Score_Label.gd" id="1_fiuiy"]
 [ext_resource type="Script" uid="uid://dhyb2acdfu7cb" path="res://scenes/fishing/fishing_game.gd" id="1_wsytv"]
 [ext_resource type="Script" uid="uid://c8t7tfprn7mi4" path="res://scenes/fishing/Score_Manager.gd" id="2_wsytv"]
+[ext_resource type="Texture2D" uid="uid://m0qksua6ktav" path="res://assets/fishing/bg.jpg" id="4_5pjvb"]
 
 [node name="FishingGame" type="Node2D"]
 script = ExtResource("1_wsytv")
 
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Background"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Area2D"]
+position = Vector2(578, 341)
+scale = Vector2(2.25109, 2.135)
+texture = ExtResource("4_5pjvb")
+
 [node name="ScoreLabel" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0.0117647, 1)
+theme_override_font_sizes/font_size = 26
 script = ExtResource("1_fiuiy")
 
 [node name="ScoreManager" type="Node2D" parent="."]
@@ -19,5 +31,9 @@ script = ExtResource("2_wsytv")
 visible = false
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0.0784314, 1)
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
