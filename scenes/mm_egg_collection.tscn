@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://ybwxgd7nw5kp"]
+
+[ext_resource type="Texture2D" uid="uid://cik01qknvsb2d" path="res://assets/egg_collection/bg.jpg" id="1_inb32"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.180392)
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 1152.0
+offset_bottom = 644.0
+texture = ExtResource("1_inb32")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 516.0
+offset_top = 149.0
+offset_right = 641.0
+offset_bottom = 226.0
+theme_override_font_sizes/font_size = 50
+text = "Start"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 518.0
+offset_top = 259.0
+offset_right = 643.0
+offset_bottom = 336.0
+theme_override_font_sizes/font_size = 50
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 297.0
+offset_top = 385.0
+offset_right = 938.0
+offset_bottom = 568.0
+theme_override_colors/font_color = Color(0.994237, 0.971418, 0.929865, 1)
+theme_override_font_sizes/font_size = 30
+text = "Narration:
+● Catch eggs dropping from above. 
+● Miss more than 3 eggs = restart the game. 
+● Time: 2 minutes. 
+● 1 egg = 200 coins "
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 309.0
+offset_top = 55.0
+offset_right = 938.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.994237, 0.971418, 0.929865, 1)
+theme_override_font_sizes/font_size = 50
+text = "Hen Game – Egg Collector "

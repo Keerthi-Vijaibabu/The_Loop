@@ -1,0 +1,85 @@
+[gd_scene load_steps=4 format=3 uid="uid://c51844i24lst0"]
+
+[ext_resource type="Texture2D" uid="uid://b625n6y6sdtey" path="res://assets/level1/green.jpg" id="1_blrug"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_blrug"]
+bg_color = Color(0.542969, 0.532364, 0.532364, 0.423529)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wc1db"]
+bg_color = Color(0.328125, 0.281982, 0.281982, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.515625, 0.515625, 0.515625, 1)
+offset_right = 1149.0
+offset_bottom = 645.0
+texture = ExtResource("1_blrug")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="TextureRect"]
+offset_left = 862.0
+offset_top = 154.0
+offset_right = 1085.0
+offset_bottom = 547.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 58
+theme_override_styles/normal = SubResource("StyleBoxFlat_blrug")
+text = "Menu"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 32.0
+offset_right = 1059.0
+offset_bottom = 135.0
+theme_override_colors/font_color = Color(0.0390625, 0.0390625, 0.0390625, 1)
+theme_override_font_sizes/font_size = 75
+text = "LumberJack - Cut the wood"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 898.0
+offset_top = 262.0
+offset_right = 1041.0
+offset_bottom = 362.0
+theme_override_colors/font_disabled_color = Color(0.484375, 0.480591, 0.480591, 1)
+theme_override_colors/font_color = Color(0.871094, 0.871094, 0.871094, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_wc1db")
+text = "Start"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 896.0
+offset_top = 403.0
+offset_right = 1039.0
+offset_bottom = 503.0
+theme_override_colors/font_disabled_color = Color(0.484375, 0.480591, 0.480591, 1)
+theme_override_colors/font_color = Color(0.871094, 0.871094, 0.871094, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_wc1db")
+text = "Quit
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 55.0
+offset_top = 219.0
+offset_right = 805.0
+offset_bottom = 534.0
+theme_override_colors/font_color = Color(0.0664063, 0.0638123, 0.0638123, 1)
+theme_override_font_sizes/font_size = 28
+text = "* Tap to cut the trees.
+* Collect 10 woods per basket.
+* Deliver the basket to storage.
+* Repeat this for 3 times .
+* Time will be 2 minutes per session.
+* If you finish early ,then bonus points will be awarded. 
+* You need to collect 30 woods(total)."
