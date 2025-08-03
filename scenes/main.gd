@@ -18,6 +18,8 @@ func _process(delta):
 	gold_label.text = "Gold: %d" % GlobalSceneManager.gold
 	stone_label.text = "Stone: %d" % GlobalSceneManager.stone
 	wood_label.text = "Wood: %d" % GlobalSceneManager.wood
+	
+	check_progress()
 
 func _on_mining_body_entered(body: Node2D) -> void:
 	if body.name == "CharacterBody2D":
@@ -39,3 +41,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 func _on_wood_body_entered(body: Node2D) -> void:
 	if body.name == "CharacterBody2D":
 		call_deferred("change_scene_1")
+		
+func check_progress():
+	if (GlobalSceneManager.wood == 30) and (GlobalSceneManager.stone == 30) and (GlobalSceneManager.gold == 5000):
+		get_tree().change_scene_to_file("res://scenes/main2.tscn")

@@ -11,6 +11,7 @@ var points: int = 0
 
 #maze_time
 var maze_time = 0
+var try_no = 0
 
 #lumberjack
 
@@ -28,7 +29,7 @@ var curr_gold = 0
 const SAVE_PATH := "user://save_data.json"
 
 func maze():
-	points += (maze_time / 5) * 100
+	points += curr_points
 	
 func eggs():
 	curr_points = curr_time * 20

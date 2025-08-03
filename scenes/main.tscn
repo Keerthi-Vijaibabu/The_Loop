@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://dpm2oox6drvjx"]
+[gd_scene load_steps=43 format=4 uid="uid://dpm2oox6drvjx"]
 
 [ext_resource type="Texture2D" uid="uid://b625n6y6sdtey" path="res://assets/level1/green.jpg" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://bgip75lv5l1ti" path="res://scenes/main.gd" id="1_y6deb"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://dt0y3a3rqar7y" path="res://scenes/main_player.tscn" id="23_pm3ni"]
 [ext_resource type="Texture2D" uid="uid://cxtqp71dcacfh" path="res://assets/level1/cart.png" id="24_0n3wm"]
 [ext_resource type="Texture2D" uid="uid://d2dfktyww41js" path="res://assets/level1/decor_4.png" id="24_1u8w0"]
+[ext_resource type="AudioStream" uid="uid://bewgyebwejb5w" path="res://assets/audio/main_bg.mp3" id="25_og1vs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qnost"]
 texture = ExtResource("2_h2yge")
@@ -4666,6 +4667,10 @@ offset_top = 77.0
 offset_right = 111.0
 offset_bottom = 111.0
 label_settings = SubResource("LabelSettings_tel4y")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_og1vs")
+autoplay = true
 
 [connection signal="body_entered" from="mining" to="." method="_on_mining_body_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -5267,7 +5267,7 @@ offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("6_kahk2")]
-position = Vector2(47, 160)
+position = Vector2(40, 160)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_lvtnf")

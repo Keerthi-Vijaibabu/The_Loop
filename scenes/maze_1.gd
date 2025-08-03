@@ -20,9 +20,11 @@ func update_timer_label():
 
 func _on_Timer_timeout():
 	timer_label.text = "Time's up!"
-	get_tree().change_scene_to_file("res://scenes/MazeGameOver.tscn")
+	time_left = 0
+	GlobalSceneManager.maze_time = time_left
+	get_tree().change_scene_to_file("res://scenes/go_maze.tscn")
 
 func _on_target_body_entered(body: Node2D) -> void:
 	GlobalSceneManager.maze_time = time_left
 	#timer_label.text = "Time's up!"
-	get_tree().change_scene_to_file("res://scenes/MazeGameOver.tscn")
+	get_tree().change_scene_to_file("res://scenes/go_maze.tscn")
