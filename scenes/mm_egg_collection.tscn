@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://ybwxgd7nw5kp"]
+[gd_scene load_steps=3 format=3 uid="uid://dqt368qglfbsm"]
 
-[ext_resource type="Texture2D" uid="uid://cik01qknvsb2d" path="res://assets/egg_collection/bg.jpg" id="1_inb32"]
+[ext_resource type="Script" uid="uid://7lgyi126toku" path="res://scenes/mm_egg_collection.gd" id="1_1f033"]
+[ext_resource type="Texture2D" uid="uid://bhc7fai6lmud5" path="res://assets/egg_collection/bg.jpg" id="1_inb32"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_1f033")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(1, 1, 1, 0.180392)
@@ -29,17 +31,16 @@ theme_override_font_sizes/font_size = 50
 text = "Exit"
 
 [node name="Label" type="Label" parent="."]
-offset_left = 297.0
-offset_top = 385.0
-offset_right = 938.0
-offset_bottom = 568.0
+offset_left = 260.0
+offset_top = 373.0
+offset_right = 901.0
+offset_bottom = 595.0
 theme_override_colors/font_color = Color(0.994237, 0.971418, 0.929865, 1)
 theme_override_font_sizes/font_size = 30
-text = "Narration:
-● Catch eggs dropping from above. 
-● Miss more than 3 eggs = restart the game. 
+text = "Play to get the eggs.  But be cautious for if you miss more than 3 eggs, you will enter a loop.
 ● Time: 2 minutes. 
 ● 1 egg = 200 coins "
+autowrap_mode = 2
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 309.0
@@ -49,3 +50,6 @@ offset_bottom = 124.0
 theme_override_colors/font_color = Color(0.994237, 0.971418, 0.929865, 1)
 theme_override_font_sizes/font_size = 50
 text = "Hen Game – Egg Collector "
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
