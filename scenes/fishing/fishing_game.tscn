@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c04l2ar0w10ya"]
+[gd_scene load_steps=6 format=3 uid="uid://c04l2ar0w10ya"]
 
 [ext_resource type="Script" uid="uid://bmdggglt6cyd4" path="res://scenes/fishing/Score_Label.gd" id="1_fiuiy"]
 [ext_resource type="Script" uid="uid://dhyb2acdfu7cb" path="res://scenes/fishing/fishing_game.gd" id="1_wsytv"]
 [ext_resource type="Script" uid="uid://c8t7tfprn7mi4" path="res://scenes/fishing/Score_Manager.gd" id="2_wsytv"]
 [ext_resource type="Texture2D" uid="uid://m0qksua6ktav" path="res://assets/fishing/bg.jpg" id="4_5pjvb"]
+[ext_resource type="AudioStream" uid="uid://dpgfc8irf5toe" path="res://assets/fishing/5._Whisperwind[1].ogg" id="5_lliee"]
 
 [node name="FishingGame" type="Node2D"]
 script = ExtResource("1_wsytv")
@@ -13,8 +14,8 @@ script = ExtResource("1_wsytv")
 [node name="Area2D" type="Area2D" parent="Background"]
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/Area2D"]
-position = Vector2(578, 341)
-scale = Vector2(2.25109, 2.135)
+position = Vector2(578, 317)
+scale = Vector2(2.34766, 2.16204)
 texture = ExtResource("4_5pjvb")
 
 [node name="ScoreLabel" type="Label" parent="."]
@@ -37,3 +38,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Backgroundmusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_lliee")
+volume_db = 5.497
+autoplay = true
+playback_type = 1
