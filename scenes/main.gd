@@ -44,5 +44,5 @@ func _on_wood_body_entered(body: Node2D) -> void:
 		call_deferred("change_scene_1")
 		
 func check_progress():
-	if (GlobalSceneManager.wood == 30) and (GlobalSceneManager.stone == 30) and (GlobalSceneManager.gold == 5000):
-		get_tree().change_scene_to_file("res://scenes/main2.tscn")
+	if (GlobalSceneManager.stone == 30) and (GlobalSceneManager.gold == 5000):
+		get_tree().change_scene_to_file("res://scenes/l1_to_l2.tscn")
