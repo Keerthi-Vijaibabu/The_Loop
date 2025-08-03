@@ -4,11 +4,10 @@ var score = 0
 var score_label
 
 func _ready():
-	# Correct way to find sibling node
 	score_label = get_parent().get_node_or_null("ScoreLabel")
 	
 
-	update_label()  # To show initial score
+	update_label()  
 
 func reset_score():
 	score = 0

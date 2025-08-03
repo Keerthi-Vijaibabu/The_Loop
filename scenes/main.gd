@@ -29,7 +29,7 @@ func change_scene_3():
 	#get_tree().change_scene_to_file("res://scenes/mining/main_mining.tscn")
 	pass
 func change_scene_2():
-	get_tree().change_scene_to_file("res://scenes/fishing/fishing_game.tscn")
+	get_tree().change_scene_to_file("res://scenes/mm_fishing.tscn")
 func change_scene_1():
 	get_tree().change_scene_to_file("res://scenes/mining/main_mining.tscn")
 

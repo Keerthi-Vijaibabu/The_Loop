@@ -1,9 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://xcg2qh0h0j5d"]
+[gd_scene load_steps=8 format=3 uid="uid://dbchra18lpsau"]
 
+[ext_resource type="Script" uid="uid://r0e2or4oakau" path="res://scenes/l_1_to_l_2.gd" id="1_0g33l"]
 [ext_resource type="Texture2D" uid="uid://b625n6y6sdtey" path="res://assets/level1/green.jpg" id="1_613n4"]
-[ext_resource type="Texture2D" uid="uid://dn6n4ie0d5642" path="res://assets/Maze/arrow.png" id="2_1lfgg"]
+[ext_resource type="Texture2D" uid="uid://dn6n4ie0d5642" path="res://assets/maze/arrow.png" id="2_1lfgg"]
+
+[sub_resource type="SystemFont" id="SystemFont_iohrr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0g33l"]
+font = SubResource("SystemFont_iohrr")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_yfetf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_56qrp"]
+font = SubResource("SystemFont_yfetf")
+font_size = 50
+font_color = Color(0, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_0g33l")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(1, 1, 1, 0.513726)
@@ -21,9 +37,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 55
 text = "    Congratulations!!!
 Succesfully Completed 
-        Level 1 with 
-         Score :
-         Coins :"
+        Level 1 with "
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 249.0
@@ -41,3 +55,18 @@ position = Vector2(566, 435)
 rotation = -4.7061
 scale = Vector2(0.177461, 0.138981)
 texture = ExtResource("2_1lfgg")
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 384.0
+offset_top = 240.0
+offset_right = 568.0
+offset_bottom = 312.0
+text = "Points: "
+label_settings = SubResource("LabelSettings_0g33l")
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 384.0
+offset_top = 320.0
+offset_right = 552.0
+offset_bottom = 384.0
+label_settings = SubResource("LabelSettings_56qrp")

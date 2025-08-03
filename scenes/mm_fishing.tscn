@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bn017gjqmskck"]
+[gd_scene load_steps=6 format=3 uid="uid://capiov5l024xw"]
 
-[ext_resource type="Texture2D" uid="uid://dt8hcjn01abgb" path="res://assets/Maze/g1.jpg" id="1_xuu7q"]
+[ext_resource type="Script" uid="uid://b3sjalhjruurw" path="res://scenes/mm_fishing.gd" id="1_h50s6"]
+[ext_resource type="Texture2D" uid="uid://dt8hcjn01abgb" path="res://assets/maze/g1.jpg" id="1_xuu7q"]
 [ext_resource type="Texture2D" uid="uid://c1urn76rsxum8" path="res://assets/Water.png" id="2_yqenx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p6q3f"]
@@ -40,6 +41,7 @@ texture = ExtResource("2_yqenx")
 sources/0 = SubResource("TileSetAtlasSource_p6q3f")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_h50s6")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(1, 1, 1, 0.0823529)
@@ -84,8 +86,12 @@ offset_right = 888.0
 offset_bottom = 619.0
 theme_override_font_sizes/font_size = 30
 text = "Narration:
-● Tap fishes as they jump to collect them. 
-● 1 basket = 10 fishes. 
-● Sell them at trade center. 
+Catch the fishes and convert them into gold.
 ● 1 fish = 100 coins 
-● No storage, only coin gain. "
+
+You have 30 seconds
+
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

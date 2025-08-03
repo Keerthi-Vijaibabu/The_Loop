@@ -1,10 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://c3e1qe3gwc5ks"]
+[gd_scene load_steps=13 format=3 uid="uid://c3e1qe3gwc5ks"]
 
 [ext_resource type="PackedScene" uid="uid://c3hm7gp4iuf8a" path="res://scenes/mining/parallexbg.tscn" id="1_pcmx2"]
 [ext_resource type="Script" uid="uid://cos5wvjx1cqjp" path="res://scenes/mining/main_mining.gd" id="1_v238d"]
 [ext_resource type="PackedScene" uid="uid://bgsb6qrdrw8eq" path="res://scenes/mining/ground.tscn" id="2_4ipr7"]
 [ext_resource type="PackedScene" uid="uid://020hs8by1myg" path="res://scenes/mining/main_player_mining.tscn" id="3_jdeu0"]
 [ext_resource type="AudioStream" uid="uid://ds4e76t4cg2re" path="res://assets/Mining/sound/6. Lunaris.mp3" id="5_gwp7v"]
+[ext_resource type="PackedScene" uid="uid://cboa0i64qamfi" path="res://scenes/mining/gold.tscn" id="6_8saqd"]
+[ext_resource type="PackedScene" uid="uid://bij4jyd4icxdc" path="res://scenes/mining/rock.tscn" id="7_v4k1f"]
+[ext_resource type="PackedScene" uid="uid://y3af16nfs5q1" path="res://scenes/mining/stone.tscn" id="8_rb5w3"]
 
 [sub_resource type="SystemFont" id="SystemFont_fpbmo"]
 subpixel_positioning = 0
@@ -73,6 +76,15 @@ bus = &"Music"
 wait_time = 120.0
 one_shot = true
 autostart = true
+
+[node name="Gold" parent="." instance=ExtResource("6_8saqd")]
+position = Vector2(816, 384)
+
+[node name="Rock" parent="." instance=ExtResource("7_v4k1f")]
+position = Vector2(1168, 504)
+
+[node name="Stone" parent="." instance=ExtResource("8_rb5w3")]
+position = Vector2(992, 336)
 
 [connection signal="timeout" from="RockSpawnTimer" to="." method="_on_rock_spawn_timer_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

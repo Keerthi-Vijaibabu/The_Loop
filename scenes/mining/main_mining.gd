@@ -58,25 +58,7 @@ func _process(_delta):
 	if $bgMusic.playing == false:
 		$bgMusic.play()
 		
-	if can_spawn_rocks and $Mining_Player.position.x > last_spawn_x:
-		var gap = randf_range(rock_spawn_gap_range.x, rock_spawn_gap_range.y)
-		var next_x = last_spawn_x + gap
-		spawn_rock(next_x)
-		last_spawn_x = next_x
 	
-	if $Mining_Player.position.x > last_coin_x:
-		var gap = randf_range(coin_spawn_gap_range.x, coin_spawn_gap_range.y)
-		var next_x = last_coin_x + gap
-		spawn_coins(next_x)
-		last_coin_x = next_x
-	
-		if $Mining_Player.position.x > last_coin_x + 1000:  # additional check to prevent crowding
-			var stone_chance = randi() % 2  # 50% chance
-			if stone_chance == 0:
-				gap = randf_range(coin_spawn_gap_range.x, coin_spawn_gap_range.y)
-				next_x = last_coin_x + gap
-				spawn_stones(next_x)
-
 
 func spawn_rock(x_pos: float):
 	var rock = rocks.instantiate()
