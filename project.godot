@@ -21,6 +21,7 @@ GlobalSceneManager="*res://scenes/global_scene_manager.gd"
 
 [display]
 
+window/size/mode=2
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
