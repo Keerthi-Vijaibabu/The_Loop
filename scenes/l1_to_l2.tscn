@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://xcg2qh0h0j5d"]
+
+[ext_resource type="Texture2D" uid="uid://b625n6y6sdtey" path="res://assets/level1/green.jpg" id="1_613n4"]
+[ext_resource type="Texture2D" uid="uid://dn6n4ie0d5642" path="res://assets/Maze/arrow.png" id="2_1lfgg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.513726)
+offset_right = 1152.0
+offset_bottom = 649.0
+texture = ExtResource("1_613n4")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 247.0
+offset_top = 1.0
+offset_right = 1058.0
+offset_bottom = 342.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 55
+text = "    Congratulations!!!
+Succesfully Completed 
+        Level 1 with 
+         Score :
+         Coins :"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 249.0
+offset_top = 478.0
+offset_right = 1060.0
+offset_bottom = 647.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 55
+text = "         Moving on to 
+              Level 2"
+
+[node name="Arrow" type="Sprite2D" parent="."]
+modulate = Color(0.0562916, 0.0562916, 0.0562916, 1)
+position = Vector2(566, 435)
+rotation = -4.7061
+scale = Vector2(0.177461, 0.138981)
+texture = ExtResource("2_1lfgg")

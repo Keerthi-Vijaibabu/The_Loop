@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://313tkvt41exx"]
+
+[ext_resource type="Texture2D" uid="uid://b5if7dafsx47c" path="res://assets/level3/Background.png" id="1_07sbh"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.449219, 0.449219, 0.449219, 1)
+offset_right = 1152.0
+offset_bottom = 644.0
+texture = ExtResource("1_07sbh")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 203.0
+offset_top = 242.0
+offset_right = 1065.0
+offset_bottom = 471.0
+theme_override_colors/font_color = Color(1, 0.78125, 0.78125, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.691406, 0.691406, 1)
+theme_override_font_sizes/font_size = 40
+text = "                     Congratulations!
+     You have successfully completed 
+                        level 2 
+                   Score:
+                   Coins:"
