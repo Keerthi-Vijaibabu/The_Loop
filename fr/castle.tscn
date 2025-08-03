@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://k8c3o27hwf16"]
+
+[ext_resource type="Texture2D" uid="uid://d07wly06nyh8j" path="res://WhatsApp Image 2025-08-02 at 20.45.07_d7871641.jpg" id="1_2drs5"]
+[ext_resource type="Texture2D" uid="uid://bkgx77ta43j7o" path="res://WhatsApp_Image_2025-08-02_at_21.47.42_78e1c133-removebg-preview.png" id="2_7lyqe"]
+[ext_resource type="Texture2D" uid="uid://cdgfh7b7a7bdo" path="res://image-removebg-preview (1).png" id="3_2ij18"]
+[ext_resource type="Texture2D" uid="uid://beilkvhjn4mdm" path="res://output-removebg-preview.png" id="4_ml41p"]
+[ext_resource type="Texture2D" uid="uid://chkjut5ibxo8j" path="res://output-removebg-preview (1).png" id="5_sv7do"]
+[ext_resource type="Texture2D" uid="uid://x00dl1wts74o" path="res://output-removebg-preview (2).png" id="6_0phrv"]
+
+[node name="WhatsAppImage2025-08-02At20_45_07D7871641" type="Sprite2D"]
+position = Vector2(570, 323)
+scale = Vector2(0.997368, 1.0207)
+texture = ExtResource("1_2drs5")
+region_enabled = true
+
+[node name="WhatsAppImage2025-08-02At20_45_07D7871641" type="Sprite2D" parent="."]
+position = Vector2(6.01575, 0.979722)
+scale = Vector2(1.00989, 1.00839)
+texture = ExtResource("1_2drs5")
+
+[node name="WhatsAppImage2025-08-02At21_47_4278e1c133-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(-332.876, 27.4321)
+scale = Vector2(1.23036, 1.50839)
+texture = ExtResource("2_7lyqe")
+
+[node name="Image-removebg-preview(1)" type="Sprite2D" parent="."]
+position = Vector2(-37.0977, -260.605)
+scale = Vector2(0.552945, 0.505729)
+texture = ExtResource("3_2ij18")
+
+[node name="Output-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(-329.868, 24.493)
+scale = Vector2(0.359288, 0.252939)
+texture = ExtResource("4_ml41p")
+
+[node name="Output-removebg-preview(1)" type="Sprite2D" parent="."]
+position = Vector2(-332.375, -42.1279)
+scale = Vector2(0.310818, 0.256858)
+texture = ExtResource("5_sv7do")
+
+[node name="Output-removebg-preview(2)" type="Sprite2D" parent="."]
+position = Vector2(-330.871, 86.2153)
+scale = Vector2(0.247823, 0.180354)
+texture = ExtResource("6_0phrv")
