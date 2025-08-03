@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4myedih3v5de"]
+
+[ext_resource type="Texture2D" uid="uid://dd0vxfhrh07k6" path="res://assets/level3/Background.png" id="1_48lrq"]
+[ext_resource type="Texture2D" uid="uid://xklenwxe1r7l" path="res://assets/Maze/g1.jpg" id="2_rgn31"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.376471)
+offset_right = 1149.0
+offset_bottom = 642.0
+texture = ExtResource("1_48lrq")
+expand_mode = 1
+
+[node name="G1" type="Sprite2D" parent="."]
+modulate = Color(0.0110876, 0.0110876, 0.0110876, 1)
+position = Vector2(291, 324)
+scale = Vector2(0.493872, 0.914169)
+texture = ExtResource("2_rgn31")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 618.0
+offset_top = 208.0
+offset_right = 816.0
+offset_bottom = 291.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Points:"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 549.0
+offset_top = 385.0
+offset_right = 1063.0
+offset_bottom = 468.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Congratulations!!!"

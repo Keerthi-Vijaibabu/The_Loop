@@ -1,0 +1,95 @@
+[gd_scene load_steps=3 format=3 uid="uid://br8wxynldcxm2"]
+
+[ext_resource type="Texture2D" uid="uid://e1rsabbj2jm5" path="res://assets/Mining/vecteezy_amethyst-mine-tunnel-inside-view-mysterious-cave_15918284.jpg" id="1_spq0x"]
+[ext_resource type="Texture2D" uid="uid://ks8rsd3n4o16" path="res://assets/Mining/coin.png" id="2_i5cwv"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.419608)
+offset_left = -2.0
+offset_top = 3.0
+offset_right = 1153.0
+offset_bottom = 651.0
+texture = ExtResource("1_spq0x")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 429.0
+offset_top = 48.0
+offset_right = 754.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 60
+text = "Game Over"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 308.0
+offset_top = 184.0
+offset_right = 633.0
+offset_bottom = 267.0
+theme_override_font_sizes/font_size = 60
+text = "Time:"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 290.0
+offset_top = 329.0
+offset_right = 615.0
+offset_bottom = 412.0
+theme_override_font_sizes/font_size = 60
+text = "Coins:"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 271.0
+offset_top = 491.0
+offset_right = 596.0
+offset_bottom = 574.0
+theme_override_font_sizes/font_size = 60
+text = "Points:"
+
+[node name="Coin" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.513726)
+position = Vector2(87, 542)
+scale = Vector2(6.76316, 6.32353)
+texture = ExtResource("2_i5cwv")
+region_enabled = true
+region_rect = Rect2(111, 0, 19, 17.5)
+
+[node name="Coin2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.513726)
+position = Vector2(204, 333)
+scale = Vector2(6.76316, 6.32353)
+texture = ExtResource("2_i5cwv")
+region_enabled = true
+region_rect = Rect2(111, 0, 19, 17.5)
+
+[node name="Coin6" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.513726)
+position = Vector2(94, 121)
+scale = Vector2(6.76316, 6.32353)
+texture = ExtResource("2_i5cwv")
+region_enabled = true
+region_rect = Rect2(111, 0, 19, 17.5)
+
+[node name="Coin3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.513726)
+position = Vector2(949, 527)
+scale = Vector2(6.76316, 6.32353)
+texture = ExtResource("2_i5cwv")
+region_enabled = true
+region_rect = Rect2(111, 0, 19, 17.5)
+
+[node name="Coin5" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.513726)
+position = Vector2(1074, 347)
+scale = Vector2(6.76316, 6.32353)
+texture = ExtResource("2_i5cwv")
+region_enabled = true
+region_rect = Rect2(111, 0, 19, 17.5)
+
+[node name="Coin4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.513726)
+position = Vector2(947, 157)
+scale = Vector2(6.76316, 6.32353)
+texture = ExtResource("2_i5cwv")
+region_enabled = true
+region_rect = Rect2(111, 0, 19, 17.5)
