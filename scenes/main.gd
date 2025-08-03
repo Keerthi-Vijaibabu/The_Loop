@@ -26,7 +26,8 @@ func _on_mining_body_entered(body: Node2D) -> void:
 		call_deferred("change_scene_3")
 
 func change_scene_3():
-	get_tree().change_scene_to_file("res://scenes/mining/main_mining.tscn")
+	#get_tree().change_scene_to_file("res://scenes/mining/main_mining.tscn")
+	pass
 func change_scene_2():
 	get_tree().change_scene_to_file("res://scenes/fishing/fishing_game.tscn")
 func change_scene_1():

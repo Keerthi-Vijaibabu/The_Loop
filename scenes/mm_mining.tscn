@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://chkojlwo2b8h5"]
+[gd_scene load_steps=2 format=3 uid="uid://dnnsedm63twsx"]
 
-[ext_resource type="Texture2D" uid="uid://bo35hv1nf6v5u" path="res://assets/Mining/vecteezy_amethyst-mine-tunnel-inside-view-mysterious-cave_15918284.jpg" id="1_hcine"]
+[ext_resource type="Texture2D" uid="uid://e1rsabbj2jm5" path="res://assets/Mining/vecteezy_amethyst-mine-tunnel-inside-view-mysterious-cave_15918284.jpg" id="1_hcine"]
 
 [node name="Node2D" type="Node2D"]
 

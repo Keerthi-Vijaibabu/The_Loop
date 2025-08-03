@@ -6,10 +6,7 @@ var score_label
 func _ready():
 	# Correct way to find sibling node
 	score_label = get_parent().get_node_or_null("ScoreLabel")
-	if score_label:
-		print("✅ ScoreLabel found!")
-	else:
-		print("❌ ScoreLabel not found!")
+	
 
 	update_label()  # To show initial score
 
@@ -19,7 +16,6 @@ func reset_score():
 
 func add_point():
 	score += 1
-	print("✅ Score updated to:", score)
 	update_label()
 
 func update_label():

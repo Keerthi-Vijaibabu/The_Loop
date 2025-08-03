@@ -31,7 +31,7 @@ func _ready():
 
 func new_game():
 	$bgMusic.play()
-	gold = 0
+	#gold = 0
 	stone = 0
 	last_spawn_x = START_POS.x
 	last_coin_x = START_POS.x
@@ -39,7 +39,7 @@ func new_game():
 	$Mining_Player.position = START_POS
 	$Mining_Player.velocity = Vector2.ZERO
 	$bg/Ground.position = Vector2.ZERO
-	$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
+	#$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
 	$RockSpawnTimer.stop()
 	$RockSpawnTimer.start()
 	
@@ -49,6 +49,8 @@ func new_game():
 			
 
 func _process(_delta):
+	$CanvasLayer/TimerLabel.text = "TIME: %d" % int($Timer.time_left)
+	
 	$Mining_Player.position.x += speed
 	if ($Mining_Player.position.x - $bg/Ground.position.x) > screen_size.x * 1.5:
 		$bg/Ground.position.x += screen_size.x
@@ -110,4 +112,4 @@ func spawn_stones(x_pos: float):
 func _on_timer_timeout() -> void:
 	GlobalSceneManager.gold += gold
 	GlobalSceneManager.stones += stone
-	get_tree().change_scene_to_file("res://scenes/mining/gameover.tscn")
+	get_tree().change_scene_to_file("res://scenes/go_mining.tscn")

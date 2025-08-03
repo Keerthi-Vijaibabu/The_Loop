@@ -16,6 +16,7 @@ var try_no = 0
 #lumberjack
 
 #fishing
+var fish = 0
 
 #mining
 var mine_time = 0
@@ -27,6 +28,10 @@ var curr_points = 0
 var curr_gold = 0
 
 const SAVE_PATH := "user://save_data.json"
+
+func fishes():
+	gold += fish * 100
+	points += curr_points
 
 func maze():
 	points += curr_points
