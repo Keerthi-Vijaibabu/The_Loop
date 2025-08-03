@@ -1,7 +1,7 @@
 extends Area2D
 
-
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(body):
 	if body.name == "Mining_Player":
+		print("Stone collected")
 		get_tree().call_group("game", "add_stone", 1)
-		queue_free()  # Remove coin
+		queue_free() 

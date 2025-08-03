@@ -63,14 +63,16 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_epc36"]
 radius = 16.0
 
-[node name="Stone" type="Area2D"]
+[node name="Stone" type="Area2D" groups=["stone"]]
+collision_layer = 2
 script = ExtResource("1_alxn1")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["stone"]]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_ugt1f")
 autoplay = "default"
 frame_progress = 0.43847
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 0)
 shape = SubResource("CircleShape2D_epc36")

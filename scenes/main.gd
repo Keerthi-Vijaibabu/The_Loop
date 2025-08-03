@@ -31,7 +31,7 @@ func change_scene_3():
 func change_scene_2():
 	get_tree().change_scene_to_file("res://scenes/mm_fishing.tscn")
 func change_scene_1():
-	get_tree().change_scene_to_file("res://scenes/mining/main_mining.tscn")
+	get_tree().change_scene_to_file("res://scenes/mm_mining.tscn")
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:

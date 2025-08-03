@@ -84,7 +84,8 @@ position = Vector2(816, 384)
 position = Vector2(1168, 504)
 
 [node name="Stone" parent="." instance=ExtResource("8_rb5w3")]
-position = Vector2(992, 336)
+position = Vector2(992, 496)
+disable_mode = 2
 
 [connection signal="timeout" from="RockSpawnTimer" to="." method="_on_rock_spawn_timer_timeout"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

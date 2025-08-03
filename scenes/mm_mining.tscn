@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dnnsedm63twsx"]
+[gd_scene load_steps=3 format=3 uid="uid://dnnsedm63twsx"]
 
 [ext_resource type="Texture2D" uid="uid://e1rsabbj2jm5" path="res://assets/Mining/vecteezy_amethyst-mine-tunnel-inside-view-mysterious-cave_15918284.jpg" id="1_hcine"]
+[ext_resource type="Script" uid="uid://b3adenrtlfkou" path="res://scenes/mm_mining.gd" id="1_jg8h1"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_jg8h1")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color(1, 1, 1, 0.498039)
@@ -38,12 +40,13 @@ text = "Mine – Stone & Gold Collector "
 [node name="Label2" type="Label" parent="."]
 offset_left = 205.0
 offset_top = 353.0
-offset_right = 1047.0
+offset_right = 896.0
 offset_bottom = 620.0
 theme_override_font_sizes/font_size = 30
-text = "Narration:
-● Move on tracks, collect 30 stones and 5 gold bars. 
-● Avoid falling; if you do, restart this game. 
-● Store stones in storage, and gold bars are sold for coins. 
+text = "Play to find stones and gold coins. But Beware eachtime you hit a rock you will  Loop the game play, again and again
 ● 1 gold bar = 200 coins 
 ● Time: 2 minutes. "
+autowrap_mode = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

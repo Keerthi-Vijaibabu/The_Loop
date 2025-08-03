@@ -40,8 +40,8 @@ func new_game():
 	$Mining_Player.velocity = Vector2.ZERO
 	$bg/Ground.position = Vector2.ZERO
 	#$CanvasLayer/goldLabel.text  = "Gold: %d" % gold
-	$RockSpawnTimer.stop()
-	$RockSpawnTimer.start()
+	#$RockSpawnTimer.stop()
+	#$RockSpawnTimer.start()
 	
 	for child in get_children():
 		if child.is_in_group("rock") or child.is_in_group("gold"):
@@ -50,6 +50,8 @@ func new_game():
 
 func _process(_delta):
 	$CanvasLayer/TimerLabel.text = "TIME: %d" % int($Timer.time_left)
+	$CanvasLayer/stoneLabel.text = "Stone: %d" % stone
+	$CanvasLayer/goldLabel.text = "Gold: %d" % gold
 	
 	$Mining_Player.position.x += speed
 	if ($Mining_Player.position.x - $bg/Ground.position.x) > screen_size.x * 1.5:
@@ -60,10 +62,10 @@ func _process(_delta):
 		
 	
 
-func spawn_rock(x_pos: float):
-	var rock = rocks.instantiate()
-	rock.position = Vector2(x_pos, ROCK_Y)
-	add_child(rock)
+#func spawn_rock(x_pos: float):
+	#var rock = rocks.instantiate()
+	#rock.position = Vector2(x_pos, ROCK_Y)
+	#add_child(rock)
 	
 func add_gold(amount: int):
 	gold += amount
@@ -73,22 +75,22 @@ func add_stone(amount: int):
 	stone += amount
 	$CanvasLayer/stoneLabel.text = "Stone: %d" % stone
 
-func _on_rock_spawn_timer_timeout():
-	print("Timer started")
-	can_spawn_rocks = true
-
-func spawn_coins(x_pos: float):
-	for i in range(0,10):
-		var coin = coins.instantiate()
-		coin.position = Vector2(x_pos, COIN_Y)
-		add_child(coin)
-		
-func spawn_stones(x_pos: float):
-	var gap = 40
-	for i in range(10):
-		var s = stones.instantiate()
-		s.position = Vector2(x_pos + i * gap, COIN_Y)
-		add_child(s)
+#func _on_rock_spawn_timer_timeout():
+	#print("Timer started")
+	#can_spawn_rocks = true
+#
+#func spawn_coins(x_pos: float):
+	#for i in range(0,10):
+		#var coin = coins.instantiate()
+		#coin.position = Vector2(x_pos, COIN_Y)
+		#add_child(coin)
+		#
+#func spawn_stones(x_pos: float):
+	#var gap = 40
+	#for i in range(10):
+		#var s = stones.instantiate()
+		#s.position = Vector2(x_pos + i * gap, COIN_Y)
+		#add_child(s)
 
 
 func _on_timer_timeout() -> void:
