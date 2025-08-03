@@ -752,10 +752,12 @@ shape = SubResource("RectangleShape2D_b77ej")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("27_ljnj7")
+volume_db = -10.0
 autoplay = true
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("28_0wgk2")]
 position = Vector2(248, 448)
 
 [connection signal="body_entered" from="farm" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="farm" to="." method="_on_farm_body_entered"]
 [connection signal="body_entered" from="maze" to="." method="_on_maze_body_entered"]

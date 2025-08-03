@@ -1,6 +1,6 @@
 extends Node2D
 
-func _on_farm_body_entered(body: CharacterBody2D) -> void:
+func _on_farm_body_entered(body: Node) -> void:
 	if body.name == "CharacterBody2D":
 		call_deferred("change_scene_1")
 
