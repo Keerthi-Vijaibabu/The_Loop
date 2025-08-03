@@ -39,7 +39,6 @@ func _process(delta):
 			time_label.modulate = normal_color
 				
 		if scoremanager.score == 10:
-			await get_tree().create_timer(2).timeout 
 			on_level_complete()
 		
 	else:
@@ -76,7 +75,10 @@ func spawn():
 
 func on_level_complete():
 	print("Level Complete!")
-	get_tree().change_scene_to_file("res://scenes/egg_collection/Game_over.tscn")
+	GlobalSceneManager.curr_egg = scoremanager.score
+	GlobalSceneManager.curr_time = remaining_time
+	GlobalSceneManager.eggs()
+	get_tree().change_scene_to_file("res://scenes/go_egg_collection.tscn")
 
 
 func _on_timer_timeout() -> void:

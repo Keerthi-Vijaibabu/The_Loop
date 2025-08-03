@@ -3978,7 +3978,6 @@ font_size = 20
 [node name="Node2D" type="Node2D"]
 position = Vector2(19, 13)
 script = ExtResource("1_y6deb")
-MAIN_PLAYER_MINING = null
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15

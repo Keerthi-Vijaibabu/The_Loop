@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjxf2f5fxgt0i"]
+[gd_scene load_steps=5 format=3 uid="uid://irxaik4max8o"]
 
 [ext_resource type="Texture2D" uid="uid://p8pl5c028m6s" path="res://assets/go_maze/g1.jpg" id="1_ogrsr"]
 [ext_resource type="Texture2D" uid="uid://gu7a1sauemv5" path="res://assets/go_maze/rice.png" id="2_mfxcn"]

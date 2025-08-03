@@ -108,4 +108,6 @@ func spawn_stones(x_pos: float):
 
 
 func _on_timer_timeout() -> void:
+	GlobalSceneManager.gold += gold
+	GlobalSceneManager.stones += stone
 	get_tree().change_scene_to_file("res://scenes/mining/gameover.tscn")

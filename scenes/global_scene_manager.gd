@@ -12,7 +12,29 @@ var points: int = 0
 #maze_time
 var maze_time = 0
 
+#lumberjack
+
+#fishing
+
+#mining
+var mine_time = 0
+
+#egg collection
+var curr_egg = 0
+var curr_time = 0
+var curr_points = 0
+var curr_gold = 0
+
 const SAVE_PATH := "user://save_data.json"
+
+func maze():
+	points += (maze_time / 5) * 100
+	
+func eggs():
+	curr_points = curr_time * 20
+	points += curr_points
+	curr_gold = curr_egg * 100
+	gold += curr_gold
 
 func save_game():
 	var save_data = {

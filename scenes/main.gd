@@ -13,7 +13,7 @@ func _ready() -> void:
 	stone_label.text = "Stone: %d" % GlobalSceneManager.stone
 	wood_label.text = "Wood: %d" % GlobalSceneManager.wood
 
-func _process():
+func _process(delta):
 	point_label.text = "Point: %d" % GlobalSceneManager.points
 	gold_label.text = "Gold: %d" % GlobalSceneManager.gold
 	stone_label.text = "Stone: %d" % GlobalSceneManager.stone
