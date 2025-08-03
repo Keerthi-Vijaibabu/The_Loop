@@ -14,8 +14,8 @@ script = ExtResource("1_wsytv")
 [node name="Area2D" type="Area2D" parent="Background"]
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/Area2D"]
-position = Vector2(578, 317)
-scale = Vector2(2.34766, 2.16204)
+position = Vector2(632, 321.217)
+scale = Vector2(2.80273, 2.21757)
 texture = ExtResource("4_5pjvb")
 
 [node name="ScoreLabel" type="Label" parent="."]
