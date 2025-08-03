@@ -1,14 +1,26 @@
 extends Label
 
-var score_manager = null
+var score = 0
+var score_label
+
 func _ready():
-	score_manager = get_parent().get_node_or_null("ScoreManager")
-	if score_manager == null:
-		print("❌ ScoreManager not found!")
-	else:
-		print("✅ ScoreManager found:", score_manager)
+	score_label = self
+	update_label()
 
+func reset_score():
+	score = 0
+	update_label()
 
-func _process(_delta):
-	if score_manager:
-		text = "Fish Caught: %d" % score_manager.score
+func add_point():
+	score += 1
+	print("✅ Score updated to:", score)
+	update_label()
+
+	# ✅ Check for instant win
+	if score >= 20:
+		var game_node = get_tree().get_root().get_node("FishingGame")
+		if game_node:
+			game_node.on_player_win()
+
+func update_label():
+	text = "Fish Caught: %d" % score

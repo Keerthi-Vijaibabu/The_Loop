@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://chkojlwo2b8h5"]
+
+[ext_resource type="Texture2D" uid="uid://bo35hv1nf6v5u" path="res://assets/Mining/vecteezy_amethyst-mine-tunnel-inside-view-mysterious-cave_15918284.jpg" id="1_hcine"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.498039)
+offset_right = 1152.0
+offset_bottom = 651.0
+texture = ExtResource("1_hcine")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 524.0
+offset_top = 161.0
+offset_right = 649.0
+offset_bottom = 238.0
+theme_override_font_sizes/font_size = 50
+text = "Start"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 525.0
+offset_top = 278.0
+offset_right = 650.0
+offset_bottom = 355.0
+theme_override_font_sizes/font_size = 50
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 246.0
+offset_top = 43.0
+offset_right = 972.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 50
+text = "Mine – Stone & Gold Collector "
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 205.0
+offset_top = 353.0
+offset_right = 1047.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 30
+text = "Narration:
+● Move on tracks, collect 30 stones and 5 gold bars. 
+● Avoid falling; if you do, restart this game. 
+● Store stones in storage, and gold bars are sold for coins. 
+● 1 gold bar = 200 coins 
+● Time: 2 minutes. "

@@ -1,0 +1,191 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbw51swglxspp"]
+
+[ext_resource type="Texture2D" uid="uid://p8pl5c028m6s" path="res://assets/go_maze/g1.jpg" id="1_i2w5g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vj2tm"]
+bg_color = Color(0.449219, 0.449219, 0.449219, 1)
+border_color = Color(0.68, 0.68, 0.68, 0.231373)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+
+[sub_resource type="FontFile" id="FontFile_5xvnn"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/75/0/ascent = 0.0
+cache/0/75/0/descent = 0.0
+cache/0/75/0/underline_position = 0.0
+cache/0/75/0/underline_thickness = 0.0
+cache/0/75/0/scale = 1.0
+cache/0/60/0/ascent = 0.0
+cache/0/60/0/descent = 0.0
+cache/0/60/0/underline_position = 0.0
+cache/0/60/0/underline_thickness = 0.0
+cache/0/60/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+cache/0/39/0/ascent = 0.0
+cache/0/39/0/descent = 0.0
+cache/0/39/0/underline_position = 0.0
+cache/0/39/0/underline_thickness = 0.0
+cache/0/39/0/scale = 1.0
+cache/0/38/0/ascent = 0.0
+cache/0/38/0/descent = 0.0
+cache/0/38/0/underline_position = 0.0
+cache/0/38/0/underline_thickness = 0.0
+cache/0/38/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/34/0/ascent = 0.0
+cache/0/34/0/descent = 0.0
+cache/0/34/0/underline_position = 0.0
+cache/0/34/0/underline_thickness = 0.0
+cache/0/34/0/scale = 1.0
+cache/0/33/0/ascent = 0.0
+cache/0/33/0/descent = 0.0
+cache/0/33/0/underline_position = 0.0
+cache/0/33/0/underline_thickness = 0.0
+cache/0/33/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/31/0/ascent = 0.0
+cache/0/31/0/descent = 0.0
+cache/0/31/0/underline_position = 0.0
+cache/0/31/0/underline_thickness = 0.0
+cache/0/31/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2w5g"]
+bg_color = Color(0.558594, 0.558594, 0.558594, 0.491)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.546875, 0.531921, 0.531921, 1)
+offset_left = 2.0
+offset_right = 1152.0
+offset_bottom = 652.0
+texture = ExtResource("1_i2w5g")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 916.0
+offset_top = 275.0
+offset_right = 1096.0
+offset_bottom = 370.0
+theme_override_colors/font_disabled_color = Color(0.988281, 0.988281, 0.988281, 1)
+theme_override_font_sizes/font_size = 39
+theme_override_styles/normal = SubResource("StyleBoxFlat_vj2tm")
+text = "Start"
+
+[node name="Button2" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 918.0
+offset_top = 412.0
+offset_right = 1098.0
+offset_bottom = 507.0
+theme_override_colors/font_disabled_color = Color(0.988281, 0.988281, 0.988281, 1)
+theme_override_font_sizes/font_size = 39
+theme_override_styles/normal = SubResource("StyleBoxFlat_vj2tm")
+text = "Quit
+"
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 31.0
+offset_right = 1081.0
+offset_bottom = 165.0
+theme_override_colors/font_color = Color(100, 95.581, 98.585, 0.779)
+theme_override_colors/font_shadow_color = Color(0.8125, 0.806152, 0.806152, 1)
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = SubResource("FontFile_5xvnn")
+theme_override_font_sizes/font_size = 100
+text = " Maze game - Solve this"
+
+[node name="Label" type="Label" parent="TextureRect/Label"]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 170.0
+offset_right = 1088.0
+offset_bottom = 529.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2w5g")
+text = "Menu"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 278.0
+offset_right = 881.0
+offset_bottom = 533.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.780392)
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = SubResource("FontFile_5xvnn")
+theme_override_font_sizes/font_size = 30
+text = "*Navigate  through a maze to reach the  rice bag.
+*Time limit will be 1 minute.
+*If successful,you will gain rice for repository with 2000 points.
+*You can only play it thrice.
+*If not finished in time then the game will be restarted again.
+"
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 187.0
+offset_right = 377.0
+offset_bottom = 254.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.779)
+theme_override_colors/font_shadow_color = Color(0.613281, 0.613281, 0.613281, 1)
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = SubResource("FontFile_5xvnn")
+theme_override_font_sizes/font_size = 40
+text = "Need to play this!"
