@@ -13,3 +13,7 @@ func _maze_body_entered(body: CharacterBody2D) -> void:
 
 func change_scene_2():
 	get_tree().change_scene_to_file("res://scenes/maze1.tscn")
+	
+func check_progress():
+	if (GlobalSceneManager.gold == 10000):
+		get_tree().change_scene_to_file("res://scenes/main2.tscn")

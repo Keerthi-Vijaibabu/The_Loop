@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://3sa8ocipunl1"]
+[gd_scene load_steps=34 format=3 uid="uid://3sa8ocipunl1"]
 
 [ext_resource type="Texture2D" uid="uid://dt8hcjn01abgb" path="res://assets/maze/g1.jpg" id="1_1mhn8"]
 [ext_resource type="Script" uid="uid://cpco7w2r8mtf1" path="res://scenes/main_2.gd" id="1_b77ej"]
@@ -25,6 +25,8 @@
 [ext_resource type="Texture2D" uid="uid://bqadndpevf1u1" path="res://assets/level2/Palm_tree2_1.png" id="25_vmkl8"]
 [ext_resource type="Texture2D" uid="uid://bqkmasmddy6cj" path="res://assets/level2/Broken_tree3.png" id="26_vfcr6"]
 [ext_resource type="Texture2D" uid="uid://b3q0wwlcvmqfg" path="res://assets/level2/Well (1).png" id="27_jfsao"]
+[ext_resource type="AudioStream" uid="uid://bewgyebwejb5w" path="res://assets/audio/main_bg.mp3" id="27_ljnj7"]
+[ext_resource type="PackedScene" uid="uid://dt0y3a3rqar7y" path="res://scenes/main_player.tscn" id="28_0wgk2"]
 [ext_resource type="Texture2D" uid="uid://d31n7g3b6qoe8" path="res://assets/level1/TilesetRiver.JPG" id="28_sfdux"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8jpxv"]
@@ -747,5 +749,12 @@ shape = SubResource("RectangleShape2D_ljnj7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="maze"]
 position = Vector2(165.5, 113.5)
 shape = SubResource("RectangleShape2D_b77ej")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_ljnj7")
+autoplay = true
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("28_0wgk2")]
+position = Vector2(248, 448)
 
 [connection signal="body_entered" from="farm" to="." method="_on_area_2d_body_entered"]

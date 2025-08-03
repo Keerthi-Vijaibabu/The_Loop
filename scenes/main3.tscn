@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6knqy3mgu5c0"]
+[gd_scene load_steps=7 format=3 uid="uid://vxgy7ry7aeii"]
 
-[ext_resource type="Texture2D" uid="uid://dd0vxfhrh07k6" path="res://assets/level3/Background.png" id="1_r6fop"]
-[ext_resource type="Texture2D" uid="uid://b1otwoaoxtqul" path="res://assets/level3/Asset 21.png" id="2_ow45r"]
+[ext_resource type="Texture2D" uid="uid://b5if7dafsx47c" path="res://assets/level3/Background.png" id="1_r6fop"]
+[ext_resource type="Script" uid="uid://vih6so0mmwra" path="res://scenes/main_3.gd" id="1_wsnpm"]
+[ext_resource type="Texture2D" uid="uid://3yslnqefqw1i" path="res://assets/level3/Asset 21.png" id="2_ow45r"]
+[ext_resource type="PackedScene" uid="uid://dt0y3a3rqar7y" path="res://scenes/main_player.tscn" id="4_kavpc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5tv8"]
 size = Vector2(1143.96, 22.55)
@@ -11,6 +13,7 @@ radius = 38.0
 height = 112.0
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_wsnpm")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 375.0
@@ -29,7 +32,7 @@ texture = ExtResource("2_ow45r")
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(583, 123.5)
+position = Vector2(584, 128)
 scale = Vector2(1, 20)
 shape = SubResource("RectangleShape2D_w5tv8")
 
@@ -234,12 +237,6 @@ rotation = -2.39459
 scale = Vector2(1.3, 1)
 shape = SubResource("CapsuleShape2D_r6fop")
 
-[node name="CollisionShape2D41" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(639, 428)
-rotation = -2.39459
-scale = Vector2(1.3, 1)
-shape = SubResource("CapsuleShape2D_r6fop")
-
 [node name="CollisionShape2D42" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(763, 395)
 rotation = -2.39459
@@ -257,3 +254,16 @@ position = Vector2(387, 605)
 rotation = -3.23235
 scale = Vector2(0.8, 0.5)
 shape = SubResource("CapsuleShape2D_r6fop")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D41" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(639, 428)
+rotation = -2.39459
+scale = Vector2(1.3, 1)
+shape = SubResource("CapsuleShape2D_r6fop")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_kavpc")]
+position = Vector2(40, 424)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
